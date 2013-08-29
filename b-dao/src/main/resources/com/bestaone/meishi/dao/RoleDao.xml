@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bestaone.meishi.dao.RoleDao">
+
+	<resultMap type="com.bestaone.meishi.model.Role" id="roleResultMap">
+		<id property="id" column="ID" />
+		<id property="name" column="NAME" />
+		<id property="remark" column="REMARK" />
+		<id property="status" column="STATUS" />
+	</resultMap>
+	
+	<sql id="SELECT_A">
+		SELECT 	T.*
+		FROM role T
+	</sql>
+	
+	<insert id="insert" parameterType="com.bestaone.meishi.model.Role">
+		INSERT INTO role(ID,NAME,REMARK,STATUS)
+		VALUES(#{id},#{name},#{remark},#{status})
+	</insert>
+	
+	<delete id="delete" parameterType="java.io.Serializable">
+		DELETE FROM role WHERE ID = #{id}
+	</delete>
+	
+	<update id="update" parameterType="com.bestaone.meishi.model.Role">
+  		UPDATE role SET
+    		NAME = #{name},
+    		REMARK = #{remark},
+    		STATUS = #{status}
+  		WHERE ID = #{id}
+	</update>
+	
+	<select id="getById" parameterType="java.io.Serializable" resultType="com.bestaone.meishi.model.Role" resultMap="roleResultMap">
+		<include refid="SELECT_A"/> WHERE T.ID = #{id}
+	</select>
+	
+	<select id="quaryAll" resultType="com.bestaone.meishi.model.Role" resultMap="roleResultMap">
+		<include refid="SELECT_A"/>
+	</select>
+	
+	<select id="pageAll" resultMap="roleResultMap">
+		<include refid="SELECT_A"/>
+	</select>
+
+</mapper>
