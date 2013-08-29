@@ -228,7 +228,7 @@
 				<li><a rel="nofollow" href="javascript:;" target="_blank">开发者</a>|</li>
 				<li><a onclick="return false;" href="javascript:;">友情链接</a></li>
 			</ul>
-			<p>&copy;2003-2013 aiwan.biz, All Rights Reserved.&#12288;&#12288;本站发布的所有内容，未经许可，不得转载，详见<a href="javascript:;">《知识产权声明》</a>。</p>
+			<p>&copy;2003-2013 aiwan.biz, All Rights Reserved.&#12288;&#12288;本站发布的所有内容，未经许可，不得转载，详见<a href="javascript:;">《知识产权声明》</a></p>
 		</footer>
 	</section>
 	<script src="http://api.map.baidu.com/api?v=1.5&ak=79371730a308db33cf477bf3ae05fa63" type="text/javascript"></script>
