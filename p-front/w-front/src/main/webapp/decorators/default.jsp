@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator"%>
 
+<%
+	String themes = "default";
+%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,10 +16,10 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.bootcss.com/assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="http://www.bootcss.com/assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="http://www.bootcss.com/assets/ico/favicon.png">
-	<%@ include file="/static/common/css-pre.jsp" %>
-	<%@ include file="/static/common/js.jsp" %>
+	<link rel="stylesheet" type="text/css" href="/static/themes/<%=themes %>.css">
+	<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/themes/bootstrap/js/bootstrap.min.js"></script>
 	<decorator:head />
-	<%@ include file="/static/common/css-suf.jsp" %>
 </head>
 
 <body>
