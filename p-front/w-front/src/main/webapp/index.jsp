@@ -40,27 +40,13 @@
 					<li><a href="/register">注册</a></li>
 				</ul>
 				<!-- 搜索 -->
-				<form class="navbar-form navbar-right pr0 pl0">
-					<div>
-						<div class="input-group">
-							<div class="input-group-btn">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">所有 <span class="caret"></span></button>
-								<ul class="dropdown-menu">
-									<li><a tabindex="-1" href="#">所有</a></li>
-									<li><a tabindex="-1" href="#">电话号码</a></li>
-									<li><a tabindex="-1" href="#">店名</a></li>
-									<li class="divider"></li>
-									<li><a tabindex="-1" href="#">开业时间</a></li>
-								</ul>
-							</div>
-							<!-- /btn-group -->
-							<input type="text" class="form-control" placeholder="店名、电话、地址...">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">搜索</button>
-							</span>
-						</div>
-					</div>
-				</form>
+				<form class="navbar-form navbar-right pr0">
+					<div class="form-group"></div>
+            		<div class="form-group">
+              			<input class="form-control" placeholder="店名、电话、地址...">
+            		</div>
+            		<button type="submit" class="btn btn-success">搜索</button>
+          		</form>
 			</div>
 		</div>
 	</nav>
@@ -74,7 +60,7 @@
 			<div class="jumbotron banle" style="background:url(/static/img/banner1.jpg);">
 				<h3>你好, 欢迎来到爱玩网!</h3>
 				<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-				<p><a class="btn btn-primary btn-lg">了解更多 » &raquo;</a></p>
+				<p><a class="btn btn-success btn-lg">了解更多  &raquo;</a></p>
 			</div>
 		</header>
 		

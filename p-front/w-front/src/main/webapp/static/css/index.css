@@ -121,8 +121,6 @@ footer li a {
 }
 #viewed h2 {
     background: none repeat scroll 0 0 #FBFBFB;
-    height: 24px;
-    line-height: 24px;
     padding: 10px 15px;
     font-size: 100%;
     margin: 0px;
@@ -245,8 +243,6 @@ footer li a {
     background: none repeat scroll 0 0 #F6F6F6;
     font-family: 'Microsoft Yahei','宋体',Tahoma,Helvetica,arial,sans-serif;
     font-size: 12px;
-    height: 24px;
-    line-height: 24px;
     padding: 10px 15px;
 }
 .product_detail .location span {
