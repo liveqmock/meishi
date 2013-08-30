@@ -3,11 +3,10 @@
 <html>
 
 <head>
-	<link href="/static/css/index.css" type="text/css" rel="stylesheet">
+<link href="/static/css/index.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-
 
 	<!-- Fixed 导航 -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -322,7 +321,7 @@
 	<script src="http://api.map.baidu.com/api?v=1.5&ak=79371730a308db33cf477bf3ae05fa63" type="text/javascript"></script>
 	<script src="/static/js/plugins/baidu.map.js" type="text/javascript"></script>
 	<script src="/static/js/web/index.js" type="text/javascript"></script>
-
+	
 </body>
 
 </html>

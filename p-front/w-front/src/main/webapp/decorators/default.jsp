@@ -2,7 +2,8 @@
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator"%>
 
 <%
-	String themes = "default";
+//united spacelab bootstrap default readable cerulean
+	String themes = "united";
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -17,9 +18,11 @@
 	<link rel="apple-touch-icon-precomposed" href="http://www.bootcss.com/assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="http://www.bootcss.com/assets/ico/favicon.png">
 	<link rel="stylesheet" type="text/css" href="/static/themes/<%=themes %>.css">
+	
 	<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="/static/themes/bootstrap/js/bootstrap.min.js"></script>
 	<decorator:head />
+	<link rel="stylesheet" type="text/css" href="/static/css/all.min.css">
 </head>
 
 <body>
