@@ -57,7 +57,7 @@
 		<!-- 头部 -->
 		<header>
 			<!-- Main jumbotron for a primary marketing message or call to action -->
-			<div class="jumbotron banle" style="background:url(/static/img/banner1.jpg);">
+			<div class="jumbotron banle" style="background:url(/static/images/banner1.jpg);">
 				<h3>你好, 欢迎来到爱玩网!</h3>
 				<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 				<p><a class="btn btn-success btn-lg">了解更多  &raquo;</a></p>
@@ -263,21 +263,40 @@
 					</section>
 				</article>
 				<aside id="sidebar" class="col-xs-6 col-sm-3 index-aside">
-					<div id="map" class="well baidu-map4"></div>
-					<div class="well sidebar-nav">
-						<ul class="nav">
-							<li>Sidebar</li>
-							<li class="active"><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li>Sidebar</li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li>Sidebar</li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-						</ul>
+					<div class="panel panel-default index-popover">
+            			<div class="panel-heading">
+              				<h3 class="panel-title">提示</h3>
+            			</div>
+            			<div class="panel-body">
+							<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            			</div>
+          			</div>
+          			<div class="panel panel-default index-popover">
+            			<div class="panel-heading">
+              				<h3 class="panel-title">地图</h3>
+            			</div>
+            			<div id="map" class="panel-body baidu-map4"></div>
+          			</div>
+
+					<div class="panel panel-default index-popover">
+						<div class="panel-heading">
+              				<h3 class="panel-title">导航</h3>
+            			</div>
+            			<div class="panel-body">
+	            			<ul class="nav">
+								<li>Sidebar</li>
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li>Sidebar</li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li>Sidebar</li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+            			</div>
 					</div>
 				</aside>
 				<!--/span-->

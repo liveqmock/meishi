@@ -12,11 +12,11 @@
 	<title><decorator:title default="AIWAN云平台" /></title>
 	<%@ include file="/static/common/meta.jsp" %>
 	<!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.bootcss.com/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.bootcss.com/assets/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.bootcss.com/assets/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="http://www.bootcss.com/assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="http://www.bootcss.com/assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/images/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/images/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/static/images/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="/static/images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="/static/themes/<%=themes %>.css">
 	
 	<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>

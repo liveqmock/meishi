@@ -70,7 +70,7 @@
 		<!-- 头部 -->
 		<header>
 			<!-- Main jumbotron for a primary marketing message or call to action -->
-			<div class="jumbotron banle" style="background:url(/static/img/banner1.jpg);">
+			<div class="jumbotron banle" style="background:url(/static/images/banner1.jpg);">
 				<h3>你好, 欢迎来到爱玩网!</h3>
 				<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 				<p><a class="btn btn-primary btn-lg">了解更多 » &raquo;</a></p>
