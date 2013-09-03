@@ -75,112 +75,136 @@
 						<h1>Hello, world!</h1>
 						<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
 					</section>
-					<section class="">
-
-
-
-				<div class="product_detail">
-
-
-
-			    
-        <div class="location">当前位置：<a href="/index.html">Like团购</a>&nbsp;&gt;&nbsp;
-                        <a href="/c/shenghuo.html">生活类</a>&nbsp;&gt;&nbsp;
-                            <a href="/c/xiuxianyule.html">休闲娱乐</a>&nbsp;&gt;&nbsp;
-                            <a href="/c/qitayule.html">其他娱乐</a>&nbsp;&gt;&nbsp;
-                <span>89元三甲港套餐 </span>
-    </div>
-        <h1>[上海] 89元三甲港套餐<span title="">仅售89元！市场价最高218元的上海三甲港海滨乐园家庭套餐！节假日通用！海滨游玩，乐趣无穷！</span></h1>
-        <div class="product_detailc clearfix">
-                <ul id="FastRobwrap">
-                        <!-- robover unstart start -->
-                        <li class="fastrob start"><i>¥</i>89<span>市场价：<del>￥218</del><div class="zhekou_tips">4.08折</div></span></li>
-                        <!-- pro_bg3未开始 pro_bg2已结束 pro_bg1抢购 -->
-                                                                                <li class="buybtn"><a href="/team/buy.html?id=114574&amp;quantity=0" class="pro_qiangou pro_bg1">抢购</a><a href="javascript:;" class="pro_joincart r buy">加入购物车</a></li>
-                                                                                                                <li class="time"><span>距离团购结束还有</span><time timer="36604" class="multi_time"><b>10</b>时<b>10</b>分<b>4</b>秒</time></li>
-                                                <li class="population">
-                                                                        <div class="purhcase_number"><b>1155</b>人已购买</div>
-                                        <div class="no_stock_soon"> 数量有限下手要快哦</div>
-                                                        </li>
-                </ul>
-                <div class="pic">
-                                                <img width="470" height="300" src="http://pp.likejuan.com/static/team/2013/0527/13696231889704.jpg?updated=1369637374">
-                        <div class="pic_bottom">
-                                <!-- Baidu Button BEGIN -->
-                                <div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"> 
-                                        <span class="share_text">分享到：</span>
-                                        <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
-                                        <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
-                                        <a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
-                                        <a class="bds_renren" title="分享到人人网" href="#"></a>
-                                        <a class="bds_t163" title="分享到网易微博" href="#"></a>
-                                        <span class="bds_more"></span>
-                                        <a class="shareCount" href="#" title="累计分享0次">0</a>
-                                </div>
-                                <script data="type=tools&amp;uid=0" id="bdshare_js" type="text/javascript" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=382638"></script>
-                                
-                                <script type="text/javascript">
-                                        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
-                                </script>
-                                <!-- Baidu Button END -->
-                                <a onclick="doCollection(this,114574)" href="javascript:;" class="favorites">收藏本单 <i>(6680)</i></a>
-                        </div>
-                </div>
-        </div>
-
-
-
-				</div>
-
-
-
-
+					<section>
+						<div class="panel panel-default index-popover">
+			              <div class="panel-heading">
+			     			<h3 class="panel-title">简介</h3>
+			              </div>
+			              <div class="panel-body">
+			                Panel content
+			              </div>
+			            </div>
 					</section>
-					<section class="">
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-							<p><a href="#" class="btn btn-default">View details »</a></p>
-						</div>
-						<!--/span-->
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-								<a href="#" class="btn btn-default">View details »</a>
-							</p>
-						</div>
-						<!--/span-->
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-								<a href="#" class="btn btn-default">View details »</a>
-							</p>
-						</div>
-						<!--/span-->
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-								<a href="#" class="btn btn-default">View details »</a>
-							</p>
-						</div>
-						<!--/span-->
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-								<a href="#" class="btn btn-default">View details »</a>
-							</p>
-						</div>
-						<!--/span-->
-						<div class="col-6 col-sm-6 col-lg-4">
-							<h2>Heading</h2>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-								<a href="#" class="btn btn-default">View details »</a>
-							</p>
-						</div>
-						<!--/span-->
+					<section>
+						<div class="panel panel-default index-popover">
+			              <div class="panel-heading">
+			     			<h3 class="panel-title">基本情况</h3>
+			              </div>
+			              <div class="panel-body">
+			                Panel content
+			              </div>
+			            </div>
+					</section>
+					<section>
+						<div class="panel panel-default index-popover">
+			              <div class="panel-heading">
+			     			<h3 class="panel-title">食谱</h3>
+			     			<button class="btn-link fr">预定</button>
+			              </div>
+			              <div class="panel-body">
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+								<p><a href="#" class="btn btn-default">View details »</a></p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+			              </div>
+							<div class="panel-footer">
+			              		<button class="btn-link">&nbsp;</button>
+			              		<button class="btn-link fr">更多...</button>
+			              	</div>
+			            </div>
+					</section>
+					<section>
+						<div class="panel panel-default index-popover">
+			              <div class="panel-heading">
+			     			<h3 class="panel-title">大厅/包厢</h3>
+			     			<button class="btn-link fr">预定</button>
+			              </div>
+			              <div class="panel-body">
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+								<p><a href="#" class="btn btn-default">View details »</a></p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+							<!--/span-->
+							<div class="col-6 col-sm-6 col-lg-4">
+								<h2>Heading</h2>
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
+									<a href="#" class="btn btn-default">View details »</a>
+								</p>
+							</div>
+			              </div>
+			              <div class="panel-footer">
+			              	<button class="btn-link">&nbsp;</button>
+			              	<button class="btn-link fr">更多...</button>
+			              </div>
+			            </div>
 					</section>
 					
-					<section class="index-tap">
+					<section class="index-tap dn">
 						<ul class="nav nav-tabs nav-box-title">
 							<li class="active"><a href="#">商家介绍</a> </li>
 						    <li><a href="#">用户评论</a></li>

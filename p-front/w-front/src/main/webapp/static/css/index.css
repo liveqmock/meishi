@@ -39,6 +39,10 @@ body {
     margin-bottom: 10px;
 }
 
+.index-popover .panel-title{
+	display: inline;
+}
+
 
 .banle{
 	color: white;
