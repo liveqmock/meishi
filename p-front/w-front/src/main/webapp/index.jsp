@@ -8,24 +8,23 @@
 
 <body>
 
-
 	<!-- Fixed 导航 -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">江南春大酒店</a>
+				<a href="#" class="navbar-brand">江南春大酒店</a>
 			</div>
-			<div class="navbar-collapse pr0 pl0">
+			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">主页</a></li>
 					<li><a href="#about">关于</a></li>
 					<li><a href="#contact">联系</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">更多 <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Action</a></li>
 							<li><a href="#">Another action</a></li>
@@ -48,6 +47,7 @@
             		<button type="submit" class="btn btn-success">搜索</button>
           		</form>
 			</div>
+			<!--/.navbar-collapse -->
 		</div>
 	</nav>
 
