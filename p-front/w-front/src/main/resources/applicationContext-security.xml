@@ -13,6 +13,11 @@
 	<http pattern="/**/*.js" security="none" />
 	<http pattern="/**/*.ico" security="none" />
 	
+	<http pattern="/**/*.eot" security="none" />
+	<http pattern="/**/*.svg" security="none" />
+	<http pattern="/**/*.ttf" security="none" />
+	<http pattern="/**/*.woff" security="none" />
+	
 	<http pattern="/remoting/**" security="none" />
 	
 	<http pattern="/index.jsp" security="none" />
