@@ -1,6 +1,21 @@
 
 $(function(){
 
+	//客服
+	$('#divQQbox').css('top', $(document).scrollTop() + $(window).height()/2);
+	$(window).scroll(function(){
+		$('#divQQbox').css('top', $(document).scrollTop() + $(window).height()/2);
+	});
+	
+	$("#divMenu").click(function(){
+		$("#divOnline").removeClass("dn");
+		$(this).addClass("dn");
+	});
+	
+	//滚动图片
+	$('.carousel').carousel()
+	
+	//地图
 	var opts = {
 		zoom : 15,
 		navigationControl : new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_ZOOM}),
