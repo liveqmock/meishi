@@ -40,11 +40,10 @@
 				</ul>
 				<!-- 搜索 -->
 				<form class="navbar-form navbar-right pr0">
-					<div class="form-group"></div>
-            		<div class="form-group">
-              			<input class="form-control" placeholder="店名、电话、地址...">
-            		</div>
-            		<button type="submit" class="btn btn-success">搜索</button>
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="店名、电话、地址...">
+					  <span class="input-group-addon glyphicon glyphicon-search"></span>
+					</div>
           		</form>
 			</div>
 			<!--/.navbar-collapse -->

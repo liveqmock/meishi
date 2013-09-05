@@ -43,6 +43,11 @@ body {
 	display: inline;
 }
 
+.index-popover .panel-body{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 .banle{
 	color: white;
