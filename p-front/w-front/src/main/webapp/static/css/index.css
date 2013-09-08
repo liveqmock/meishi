@@ -55,7 +55,7 @@ body {
  食谱
 **/
 #cookbook .cook-item{
-	padding: 5px 5px;
+	padding: 10px 10px;
 }
 
 #cookbook>.panel>.panel-body{
@@ -86,7 +86,7 @@ body {
  包厢
 **/
 #room .room-item{
-	padding: 5px 5px;
+	padding: 10px 10px;
 }
 
 #room>.panel>.panel-body{

@@ -266,7 +266,10 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<div class="room-item col-6 col-sm-6 col-lg-4">
@@ -282,7 +285,10 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<div class="room-item col-6 col-sm-6 col-lg-4">
@@ -298,7 +304,10 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<div class="room-item col-6 col-sm-6 col-lg-4">
@@ -314,7 +323,10 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<div class="room-item col-6 col-sm-6 col-lg-4">
@@ -330,7 +342,10 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<div class="room-item col-6 col-sm-6 col-lg-4">
@@ -346,14 +361,17 @@
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
-			              <div class="">
+			            </div>
+			            <div class="">
 			              	<button class="btn-link">&nbsp;</button>
 			              	<button class="btn-link fr">更多...</button>
-			              </div>
-			            </div>
+						</div>
 					</section>
 					
 					<section class="index-tap dn">
