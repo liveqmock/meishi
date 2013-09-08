@@ -21,6 +21,11 @@
 .pl0{ padding-left: 0; }
 .pr0{ padding-right: 0; }
 
+/**字体颜色**/
+.co{
+	color: #EE5238;
+}
+
 
 .cl:before,
 .cl:after {
@@ -30,4 +35,25 @@
 
 .cl:after {
   clear: both;
+}
+
+/**等级星星**/
+.rate-star-info-a{
+	background: url("/static/images/sp-rate-stars.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    vertical-align: top;
+    background-position: 0 -17px;
+    width: 60px;
+}
+
+.rate-star-info-a>span{
+    background: url("/static/images/sp-rate-stars.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    vertical-align: top;
 }

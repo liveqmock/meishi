@@ -71,6 +71,17 @@ body {
 	border: 0;
 }
 
+.cook-item .price{
+	color: #EE5238;
+    font-size: 26px;
+    line-height: 40px;
+    margin-right: 6px;
+}
+
+.cook-item .intro{
+	height: 65px;
+}
+
 /**
  包厢
 **/
@@ -91,6 +102,16 @@ body {
 	border: 0;
 }
 
+.room-item .price{
+	color: #EE5238;
+    font-size: 26px;
+    line-height: 40px;
+    margin-right: 6px;
+}
+
+.room-item .intro{
+	height: 45px;
+}
 
 
 

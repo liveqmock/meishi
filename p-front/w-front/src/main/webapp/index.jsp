@@ -132,13 +132,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<!--/span-->
@@ -148,13 +151,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<!--/span-->
@@ -164,13 +170,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<!--/span-->
@@ -180,13 +189,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<!--/span-->
@@ -196,13 +208,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 							<!--/span-->
@@ -212,13 +227,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>铁板牛扒套餐</h3>
+	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
-          							<div class="panel-footer">ss</div>
+          							<div class="panel-footer">
+          								<span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span>
+			              				<span class="fr">被定<span class="co">1200</span>次</span>
+          							</div>
           						</div>
 							</div>
 			              </div>
@@ -241,9 +259,10 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
@@ -256,9 +275,10 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
@@ -271,9 +291,10 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
@@ -286,9 +307,10 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
@@ -301,9 +323,10 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
@@ -316,16 +339,16 @@
           							<div class="thumbnail">
 	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
 	            						<div class="caption">
-	              							<h3>Thumbnail label</h3>
-	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	              							<h3>朝花夕拾厅（001）</h3>
+	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
+	              							<p><span>适合人数：<span>1-20人</span></span></p>
+	             	 						<p><span class="price">¥8888</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
           							</div>
           							<div class="panel-footer">ss</div>
           						</div>
 							</div>
-			              </div>
 			              <div class="">
 			              	<button class="btn-link">&nbsp;</button>
 			              	<button class="btn-link fr">更多...</button>
