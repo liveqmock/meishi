@@ -7,9 +7,14 @@ $(function(){
 		$('#divQQbox').css('top', $(document).scrollTop() + $(window).height()/2);
 	});
 	
-	$("#divMenu").click(function(){
+	$("#divQQbox").mouseenter(function(){
 		$("#divOnline").removeClass("dn");
-		$(this).addClass("dn");
+		$("#divMenu").addClass("dn");
+	});
+	
+	$("#divQQbox").mouseleave(function(){
+		$("#divOnline").addClass("dn");
+		$("#divMenu").removeClass("dn");
 	});
 	
 	//滚动图片

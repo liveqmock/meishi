@@ -56,7 +56,7 @@
 		<!-- 头部 -->
 		<header>
 			<!-- Main jumbotron for a primary marketing message or call to action -->
-			<div class="jumbotron banle" style="background:url(/static/images/banner1.jpg);">
+			<div class="jumbotron" style="background:url(/static/images/banner1.jpg);">
 				<h3>你好, 欢迎来到爱玩网!</h3>
 				<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 				<p><a class="btn btn-success btn-lg">了解更多  &raquo;</a></p>
@@ -74,7 +74,7 @@
 						<h1>Hello, world!</h1>
 						<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
 					</section>
-					<section id="main-carousel">
+					<section id="main-carousel" class="">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading dn">
 			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 简介</h3>
@@ -119,109 +119,214 @@
 			              </div>
 			            </div>
 					</section>
-					<section>
+					<section id="cookbook">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading">
 			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 食谱</h3>
 			     			<button class="btn-link fr">预定</button>
 			              </div>
 			              <div class="panel-body">
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-								<p><a href="#" class="btn btn-default">View details »</a></p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="cook-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 			              </div>
-							<div class="panel-footer">
+							<div class="">
 			              		<button class="btn-link">&nbsp;</button>
 			              		<button class="btn-link fr">更多...</button>
 			              	</div>
 			            </div>
 					</section>
-					<section>
+					<section id="room">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading">
 			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 大厅/包厢</h3>
 			     			<button class="btn-link fr">预定</button>
 			              </div>
 			              <div class="panel-body">
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-								<p><a href="#" class="btn btn-default">View details »</a></p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
-							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
-							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
-							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
-							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
-							<!--/span-->
-							<div class="col-6 col-sm-6 col-lg-4">
-								<h2>Heading</h2>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p><p>
-									<a href="#" class="btn btn-default">View details »</a>
-								</p>
+							<div class="room-item col-6 col-sm-6 col-lg-4">
+          						<div class="panel panel-default">
+          							<div class="panel-body thumbnail">
+          							<div class="thumbnail">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<div class="caption">
+	              							<h3>Thumbnail label</h3>
+	              							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	             	 						<p><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-default" href="#">Button</a></p>
+	            						</div>
+	          						</div>
+          							</div>
+          							<div class="panel-footer">ss</div>
+          						</div>
 							</div>
 			              </div>
-			              <div class="panel-footer">
+			              <div class="">
 			              	<button class="btn-link">&nbsp;</button>
 			              	<button class="btn-link fr">更多...</button>
 			              </div>
@@ -393,7 +498,7 @@
 				</ul>
 			</div>
 		</div>
-		<div id="divMenu" style="display: block;">
+		<div id="divMenu" style="display: ;">
 			<img alt="QQ客服热线" class="press" src="/static/images/qq_1.png">
 		</div>
 	</div>

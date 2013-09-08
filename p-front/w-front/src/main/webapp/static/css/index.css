@@ -29,6 +29,10 @@ body {
 	padding-left: 0;
 }
 
+.index-article>section{
+	margin-bottom: 20px;
+}
+
 .index-aside{
 	padding-right: 0px;
 	padding-left: 15px;
@@ -47,11 +51,47 @@ body {
 	padding: 0;
 }
 
-
-
-.banle{
-	color: white;
+/**
+ 食谱
+**/
+#cookbook .cook-item{
+	padding: 5px 5px;
 }
+
+#cookbook>.panel>.panel-body{
+	padding: 5px;
+}
+
+.cook-item>.panel{
+	padding: 0;
+	margin: 0;
+}
+
+#cookbook .thumbnail{
+	border: 0;
+}
+
+/**
+ 包厢
+**/
+#room .room-item{
+	padding: 5px 5px;
+}
+
+#room>.panel>.panel-body{
+	padding: 5px;
+}
+
+.room-item>.panel{
+	padding: 0;
+	margin: 0;
+}
+
+#room .thumbnail{
+	border: 0;
+}
+
+
 
 
 
