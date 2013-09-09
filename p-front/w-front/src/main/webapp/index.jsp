@@ -457,19 +457,33 @@
 					</section>
 				</article>
 				<aside id="sidebar" class="col-xs-6 col-sm-3 index-aside">
-					<div class="panel panel-default index-popover">
+					<div id="details" class="panel panel-default">
             			<div class="panel-heading">
               				<h3 class="panel-title">详细</h3>
             			</div>
             			<div class="panel-body">
             				<ul>
-            					<li><div><span>星</span><span>评分</span></div></li>
-            					<li><div><span>营业时间：</span><span>9:00-22:00</span></div></li>
-            					<li><div><span>大厅规格：</span><span>1-10人/桌，共20桌</span></div></li>
-            					<li><div><span>包厢规格：</span><span>1-20人/间，共30间</span></div></li>
-            					<li><div><span>联系电话：</span><span>021-33253432</span></div></li>
-            					<li><div><span>详细地址：</span><span>合肥市高新开发区科学大道88号(黄山路口)</span></div></li>
-            					<li><div><span>外卖</span><span>包厢</span><span>停车</span><span>刷卡</span><span>婚宴</span></div></li>
+            					<li>
+            						<p><span>星</span><span>评分</span></p>
+            					</li>
+            					<li>
+            						<p><span>营业时间：</span><span>9:00-22:00</span></p>
+            					</li>
+            					<li>
+            						<p><span>大厅规格：</span><span>1-10人/桌，共20桌</span></p>
+            					</li>
+            					<li>
+            						<p><span>包厢规格：</span><span>1-20人/间，共30间</span></p>
+            					</li>
+            					<li>
+            						<p><span>联系电话：</span><span>021-33253432</span></p>
+            					</li>
+            					<li>
+            						<p><span>详细地址：</span><span>合肥市高新开发区科学大道88号(黄山路口)</span></p>
+            					</li>
+            					<li>
+            						<p><span>外卖</span><span>包厢</span><span>停车</span><span>刷卡</span><span>婚宴</span></p>
+            					</li>
             				</ul>
             			</div>
           			</div>

@@ -1,5 +1,14 @@
 @CHARSET "UTF-8";
 
+/**reset**/
+.thumbnail .caption{
+	padding: 5px;
+}
+.jumbotron{
+	color: white;
+}
+/**reset**/
+
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
@@ -51,9 +60,7 @@ body {
 	padding: 0;
 }
 
-/**
- 食谱
-**/
+/**食谱**/
 #cookbook .cook-item{
 	padding: 10px 10px;
 }
@@ -82,9 +89,12 @@ body {
 	height: 65px;
 }
 
-/**
- 包厢
-**/
+.cook-item .caption h3{
+	margin-bottom: 5px;
+}
+/**食谱**/
+
+/**包厢**/
 #room .room-item{
 	padding: 10px 10px;
 }
@@ -113,8 +123,22 @@ body {
 	height: 45px;
 }
 
+.room-item .caption h3{
+	margin-bottom: 5px;
+}
+/**包厢**/
 
+/**详细**/
+#details ul>li>p{
+	border-bottom: 1px dotted #CCCCCC;
+}
 
+#details ul>li>p>span{
+	height: 40px;
+	line-height: 40px;
+	
+}
+/**详细**/
 
 
 
