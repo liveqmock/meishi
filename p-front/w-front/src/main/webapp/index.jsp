@@ -39,7 +39,7 @@
 					<li><a href="/register">注册</a></li>
 				</ul>
 				<!-- 搜索 -->
-				<form class="navbar-form navbar-right pr0">
+				<form id="seachForm" class="navbar-form navbar-right">
 					<div class="input-group">
 					  <input type="text" class="form-control" placeholder="店名、电话、地址...">
 					  <span class="input-group-addon glyphicon glyphicon-search"></span>
@@ -49,7 +49,7 @@
 			<!--/.navbar-collapse -->
 		</div>
 	</nav>
-
+	
 	<!-- 主页  -->
 	<section class="container theme-showcase">
 	

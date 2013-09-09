@@ -1,3 +1,4 @@
+/**reset**/
 body {
 	color: #333333;
     font-family: Microsoft YaHei,Arial,sans-serif;
@@ -5,4 +6,19 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Microsoft YaHei,Arial,sans-serif;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-collapse{
+	padding: 0px 0px;
+}
+/**reset**/
+
+#seachForm{
+	width: 278px;
+	padding: 0px;
 }
