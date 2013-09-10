@@ -44,7 +44,6 @@
     height: 12px;
     line-height: 12px;
     overflow: hidden;
-    vertical-align: top;
     background-position: 0 -17px;
     width: 60px;
 }
@@ -55,5 +54,5 @@
     height: 12px;
     line-height: 12px;
     overflow: hidden;
-    vertical-align: top;
 }
+

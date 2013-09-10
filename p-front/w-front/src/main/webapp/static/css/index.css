@@ -52,7 +52,7 @@ body {
     margin-bottom: 10px;
 }
 
-.index-popover .panel-title{
+.panel-title{
 	display: inline;
 }
 
@@ -139,6 +139,18 @@ body {
 	
 }
 /**详细**/
+
+/**地图**/
+#map-fullscreen{
+	margin-top: 4px;
+}
+
+#map-fullscreen:hover {
+	text-decoration:none;
+} 
+
+
+
 
 
 

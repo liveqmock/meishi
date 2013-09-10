@@ -22,3 +22,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	width: 260px;
 	padding: 0px;
 }
+
+/**评分**/
+#score{
+	color:#EE5238;
+	margin-left:10px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 30px;
+}
+
+/**详细的图标**/
+.details-icon{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    width: 40px;
+}
+
+/**外卖 包厢 停车 刷卡 婚宴**/
+.wm{
+	background: url("/static/images/food_demo.jpg") repeat-x scroll 0 -17px transparent;
+}
+
+.bx{
+	background: url("/static/images/food_demo.jpg") repeat-x scroll 0 -80px transparent;
+}
+
+.tc{
+	background: url("/static/images/food_demo.jpg") repeat-x scroll 0 -100px transparent;
+}
+
+.sk{
+	background: url("/static/images/food_demo.jpg") repeat-x scroll 0 -180px transparent;
+}
+
+.hy{
+	background: url("/static/images/food_demo.jpg") repeat-x scroll 0 -230px transparent;
+}

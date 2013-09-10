@@ -74,10 +74,10 @@
 						<h1>Hello, world!</h1>
 						<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
 					</section>
-					<section id="main-carousel" class="">
+					<section id="main-carousel" class="dn">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading dn">
-			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 简介</h3>
+			     			<h3 class="panel-title"><span class="glyphicon glyphicon-home"></span> 简介</h3>
 			              </div>
 			              <div class="panel-body">
 							<div class="carousel slide bs-docs-carousel-example" id="carousel-example-generic">
@@ -122,7 +122,7 @@
 					<section id="cookbook">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading">
-			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 食谱</h3>
+			     			<h3 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span> 食谱</h3>
 			     			<button class="btn-link fr">预定</button>
 			              </div>
 			              <div class="panel-body">
@@ -249,7 +249,7 @@
 					<section id="room">
 						<div class="panel panel-default index-popover">
 			              <div class="panel-heading">
-			     			<h3 class="panel-title text-muted"><span class="glyphicon glyphicon-home"></span> 大厅/包厢</h3>
+			     			<h3 class="panel-title"><span class="glyphicon glyphicon-th-large"></span> 大厅/包厢</h3>
 			     			<button class="btn-link fr">预定</button>
 			              </div>
 			              <div class="panel-body">
@@ -459,12 +459,12 @@
 				<aside id="sidebar" class="col-xs-6 col-sm-3 index-aside">
 					<div id="details" class="panel panel-default">
             			<div class="panel-heading">
-              				<h3 class="panel-title">详细</h3>
+              				<h3 class="panel-title"><span class="glyphicon glyphicon-align-right"></span> 详细</h3>
             			</div>
             			<div class="panel-body">
             				<ul>
             					<li>
-            						<p><span>星</span><span>评分</span></p>
+            						<p><span>综合评分：</span><span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span><span id="score">4.5</span></p>
             					</li>
             					<li>
             						<p><span>营业时间：</span><span>9:00-22:00</span></p>
@@ -482,21 +482,31 @@
             						<p><span>详细地址：</span><span>合肥市高新开发区科学大道88号(黄山路口)</span></p>
             					</li>
             					<li>
-            						<p><span>外卖</span><span>包厢</span><span>停车</span><span>刷卡</span><span>婚宴</span></p>
+            						<p>
+            							<span>
+            								<span class="details-icon wm"></span>
+            								<span class="details-icon bx"></span>
+            								<span class="details-icon tc"></span>
+            								<span class="details-icon sk"></span>
+            								<span class="details-icon hy"></span>
+            								<span> </span>
+            							</span>
+            						</p>
             					</li>
             				</ul>
             			</div>
           			</div>
-          			<div class="panel panel-default index-popover">
+          			<div class="panel panel-default">
             			<div class="panel-heading">
-              				<h3 class="panel-title">地图</h3>
+              				<h3 class="panel-title"><span class="glyphicon glyphicon-map-marker"></span> 地图</h3>
+              				<i id="map-fullscreen" class="glyphicon glyphicon-fullscreen btn-link fr"></i>
             			</div>
             			<div id="map" class="panel-body baidu-map4"></div>
           			</div>
 
-					<div class="panel panel-default index-popover">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-              				<h3 class="panel-title">导航</h3>
+              				<h3 class="panel-title"><span class="glyphicon glyphicon-header"></span> 热门</h3>
             			</div>
             			<div class="panel-body">
 	            			<ul class="nav">
@@ -514,6 +524,28 @@
 							</ul>
             			</div>
 					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+              				<h3 class="panel-title"><span class="glyphicon glyphicon-star-empty"></span> 最新</h3>
+            			</div>
+            			<div class="panel-body">
+	            			<ul class="nav">
+								<li>Sidebar</li>
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li>Sidebar</li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li>Sidebar</li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+            			</div>
+					</div>
+					
 				</aside>
 				<!--/span-->
 			</div>
