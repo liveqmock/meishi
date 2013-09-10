@@ -21,7 +21,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">主页</a></li>
+					<li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 主页</a></li>
 					<li><a href="#about">关于</a></li>
 					<li><a href="#contact">联系</a></li>
 					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">更多 <b class="caret"></b></a>
@@ -130,7 +130,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo1-400.jpg">
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
@@ -149,7 +149,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo2-400.jpg">
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
@@ -168,7 +168,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo3-400.jpg">
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
@@ -187,7 +187,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo3-400.jpg">
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
@@ -206,7 +206,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/food_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo2-400.jpg">
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
@@ -257,7 +257,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo1-400.jpg">
 	            						<div class="caption">
 	              							<h3>朝花夕拾厅（001）</h3>
 	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
@@ -295,7 +295,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo2-400.jpg">
 	            						<div class="caption">
 	              							<h3>朝花夕拾厅（001）</h3>
 	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
@@ -314,7 +314,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo3-400.jpg">
 	            						<div class="caption">
 	              							<h3>朝花夕拾厅（001）</h3>
 	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
@@ -333,7 +333,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo1-400.jpg">
 	            						<div class="caption">
 	              							<h3>朝花夕拾厅（001）</h3>
 	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
@@ -352,7 +352,7 @@
           						<div class="panel panel-default">
           							<div class="panel-body thumbnail">
           							<div class="thumbnail">
-	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/room_demo.jpg">
+	            						<img data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="/static/images/demo2-400.jpg">
 	            						<div class="caption">
 	              							<h3>朝花夕拾厅（001）</h3>
 	              							<p class="intro">包间有柜式空调，包含两个窗户，前后通透，主窗户朝南，采光良好。</p>
