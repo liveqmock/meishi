@@ -56,7 +56,7 @@
 		<!-- 头部 -->
 		<header>
 			<!-- Main jumbotron for a primary marketing message or call to action -->
-			<div class="jumbotron" style="background:url(/static/images/banner1.jpg);">
+			<div class="jumbotron dn" style="background:url(/static/images/banner1.jpg);">
 				<h3>你好, 欢迎来到爱玩网!</h3>
 				<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 				<p><a class="btn btn-success btn-lg">了解更多  &raquo;</a></p>
@@ -464,7 +464,7 @@
             			<div class="panel-body">
             				<ul>
             					<li>
-            						<p><span>综合评分：</span><span><span class="rate-star-info-a"><span style="width: 70%;"></span></span></span><span id="score">4.5</span></p>
+            						<p><span>综合评分：</span><span><span class="rate-star-info-small"><span style="width: 70%;"></span></span></span><span id="score">4.5</span></p>
             					</li>
             					<li>
             						<p><span>营业时间：</span><span>9:00-22:00</span></p>

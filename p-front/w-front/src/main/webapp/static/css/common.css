@@ -49,10 +49,27 @@
 }
 
 .rate-star-info-a>span{
-    background: url("/static/images/sp-rate-stars.png") repeat-x scroll 0 0 transparent;
+    background: url("/static/images/rate-stars.png") repeat-x scroll 0 0 transparent;
     display: inline-block;
     height: 12px;
     line-height: 12px;
     overflow: hidden;
 }
 
+.rate-star-info-small{
+	background: url("/static/images/rate-stars-small.png") repeat-x scroll 0 -22px transparent;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    width: 115px;
+    margin-bottom: -6px;
+}
+
+.rate-star-info-small>span{
+    background: url("/static/images/rate-stars-small.png") repeat-x scroll 0 2px transparent;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+}
