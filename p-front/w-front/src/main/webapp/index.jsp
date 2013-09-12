@@ -22,7 +22,7 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 主页</a></li>
-					<li><a href="#about">关于</a></li>
+					<li><a href="/about">关于</a></li>
 					<li><a href="#contact">联系</a></li>
 					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">更多 <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -35,7 +35,7 @@
 							<li><a href="#">One more separated link</a></li>
 						</ul>
 					</li>
-					<li><a href="/login">登录</a></li>
+					<li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginDlg">登录</a></li>
 					<li class="dropdown">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="glyphicon glyphicon-user"></i>
@@ -59,7 +59,8 @@
 			<!--/.navbar-collapse -->
 		</div>
 	</nav>
-	
+
+
 	<!-- 主页  -->
 	<section class="container theme-showcase">
 	
@@ -599,6 +600,45 @@
 			<img alt="QQ客服热线" class="press" src="/static/images/qq_1.png">
 		</div>
 	</div>
+	
+	<div id="loginDlg" class="modal fade">
+		<div class="modal-dialog" style="width: 400px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">用户登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<fieldset>
+							<label class="block clearfix"> 
+								<span class="block input-icon input-icon-right"> 
+									<input type="text" placeholder="Username" class="form-control">
+									<!-- <i class="glyphicon glyphicon-user"></i> -->
+								</span>
+							</label> 
+							<label class="block clearfix"> 
+								<span class="block input-icon input-icon-right"> 
+									<input type="password" placeholder="Password" class="form-control">
+									<!-- <i class="glyphicon glyphicon-lock"></i> -->
+								</span>
+							</label>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<label class="fl">
+          				<input type="checkbox" value="remember-me"> 记住我
+        			</label>
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 	
 	<!-- js -->
 	<script src="http://api.map.baidu.com/api?v=1.5&ak=79371730a308db33cf477bf3ae05fa63" type="text/javascript"></script>
