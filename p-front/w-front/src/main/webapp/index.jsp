@@ -36,8 +36,18 @@
 						</ul>
 					</li>
 					<li><a href="/login">登录</a></li>
-					<li><a href="/register">注册</a></li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="glyphicon glyphicon-user"></i>
+							bestaone <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">个人中心</a></li>
+							<li><a href="#">我的收藏</a></li>
+						</ul>
+					</li>
 				</ul>
+				
 				<!-- 搜索 -->
 				<form id="seachForm" class="navbar-form navbar-right">
 					<div class="input-group">
