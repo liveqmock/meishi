@@ -630,8 +630,8 @@
 					<label class="fl">
           				<input type="checkbox" value="remember-me"> 记住我
         			</label>
-					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary">保存</button>
+					<a class="btn-link">忘记密码？</a>
+					<button type="button" class="btn btn-primary">登录</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
