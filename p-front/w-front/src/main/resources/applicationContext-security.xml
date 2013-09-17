@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns="http://www.springframework.org/schema/security"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xmlns:beans="http://www.springframework.org/schema/beans"
-             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:util="http://www.springframework.org/schema/util"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+              http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
               http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
 	<!-- 不要过滤图片等静态资源 -->
@@ -47,33 +47,42 @@
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />  
 	</http>
 	
-	<!-- 一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性， 
-		我们的所有控制将在这三个类中实现，解释详见具体配置 -->
+	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.TeamsSessionRegistry" />
+	
+	<beans:bean id="sessionStrategy" class="com.bestaone.meishi.core.authentication.TeamsConcurrentSessionControlStrategy">
+		<beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+	</beans:bean>
+
+	<!-- 一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性，我们的所有控制将在这三个类中实现，解释详见具体配置  -->
     <beans:bean id="securityFilter" class="com.bestaone.meishi.front.web.security.SimpleFilterSecurityInterceptor">
         <beans:property name="authenticationManager" ref="authenticationManager" />
         <beans:property name="accessDecisionManager" ref="simpleAccessDecisionManager" />
     </beans:bean>
-	
-	<!-- 认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+ 
+ 	<!-- 认证管理器  -->
 	<authentication-manager alias="authenticationManager">
-		<authentication-provider user-service-ref="simpleUserDetailsService">
-			<!-- 
-			<password-encoder hash="md5" />
-			 -->
-		</authentication-provider>
+	    <authentication-provider ref="teamsAuthenticationProvider" />
 	</authentication-manager>
+
+	<beans:bean id="teamsAuthenticationProvider" class="com.bestaone.meishi.front.web.security.TeamsAuthenticationProvider" />
 	
 	<!-- 未登录的切入点 -->
     <beans:bean id="authenticationEntryPoint" class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
         <beans:property name="loginFormUrl" value="/login"></beans:property>
     </beans:bean>
+    
+    <util:list id="authenticationProcessors">
+		<beans:bean class="com.bestaone.meishi.core.security.CaptchaAuthentication" />
+		<beans:bean class="com.bestaone.meishi.core.security.UsbKeyAuthentication" />
+		<beans:bean class="com.bestaone.meishi.core.security.DynamicPasswdAuthentication" />
+	</util:list>
 	
-	<beans:bean id="loginFilter" class="com.bestaone.meishi.front.web.security.SimpleUsernamePasswordAuthenticationFilter">
+	<beans:bean id="loginFilter" class="com.bestaone.meishi.front.web.security.LoginAuthenticationFilter">
+		<beans:property name="sessionAuthenticationStrategy" ref="sessionStrategy"/>
+		<beans:property name="authenticationProcessors" ref="authenticationProcessors"/>
 		<beans:property name="authenticationManager" ref="authenticationManager"/>
 		<beans:property name="authenticationFailureHandler" ref="failureHandler"/>
 		<beans:property name="authenticationSuccessHandler" ref="successHandler"/>
-		<beans:property name="usernameParameter" value="username"/>
-		<beans:property name="passwordParameter" value="password"/>
 		<beans:property name="filterProcessesUrl" value="/j_spring_security_check"/>
 	</beans:bean>
 	

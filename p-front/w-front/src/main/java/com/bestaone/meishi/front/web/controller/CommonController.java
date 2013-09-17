@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.bestaone.meishi.core.UserContext;
 import com.bestaone.meishi.core.orm.mybatis.Page;
 import com.bestaone.meishi.core.page.ViewData;
 import com.bestaone.meishi.core.page.ViewDataStatus;
@@ -52,6 +53,7 @@ public class CommonController {
 	 */
 	@RequestMapping(value="/home")
 	public String home(Model model){
+		Object o = UserContext.getCurrentUser();
 		Page<UserImpl> page = new Page<UserImpl>(1,10);
 		userImplService.quaryAll(page);
 		model.addAttribute("usersPage", page);

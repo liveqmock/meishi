@@ -2,24 +2,13 @@ package com.bestaone.meishi.front.web.security;
 
 import java.util.Collection;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.authentication.AuthenticationDetailsSource;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Service;
-
-import com.bestaone.meishi.api.common.CommonDefined;
-import com.bestaone.meishi.model.UserImpl;
-import com.bestaone.meishi.service.UserImplService;
 
 /**
  * 资源源数据定义，即定义某一资源可以被哪些角色访问
@@ -30,13 +19,13 @@ public class SimpleInvocationSecurityMetadataSource implements FilterInvocationS
 
 	protected final Log logger = LogFactory.getLog(this.getClass());
 	
-	private final static String USERNAME_KEY = "r_username";
-	private final static String PASSWORD_KEY = "r_password";
-	
-	@Autowired
-	private UserImplService userImplService;
-	
-	private AuthenticationDetailsSource<HttpServletRequest,?> authenticationDetailsSource = new WebAuthenticationDetailsSource();
+//	private final static String USERNAME_KEY = "r_username";
+//	private final static String PASSWORD_KEY = "r_password";
+//	
+//	@Autowired
+//	private TenantUserService tenantUserService;
+//	
+//	private AuthenticationDetailsSource<HttpServletRequest,?> authenticationDetailsSource = new WebAuthenticationDetailsSource();
 
     /**
      * 构造函数
@@ -64,28 +53,29 @@ public class SimpleInvocationSecurityMetadataSource implements FilterInvocationS
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException{
     	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
     	if(authentication!=null && "anonymousUser".equals(authentication.getPrincipal())){
-    		FilterInvocation fi = (FilterInvocation) object;
-    		HttpServletRequest request = fi.getHttpRequest();
-    		String username = request.getParameter(USERNAME_KEY);
-    		String password = request.getParameter(PASSWORD_KEY);
-    		if(username!=null && password!=null){
-    			UserImpl user = userImplService.quaryByUsernameAndPassword(username,password);   
-                if (user!=null) {   
-                    UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(user.getId(), user.getPassword());
-                    authRequest.setDetails(authenticationDetailsSource.buildDetails(request));
-                    SecurityContextHolder.getContext().setAuthentication(authRequest);
-                }else{
-            		String url = request.getRequestURI();
-            		String query = request.getQueryString();
-            		if(url!=null && !"".equals(url) && !"/".equals(url)){
-            			if(query!=null && !"".equals(query)){
-            				url += "?" + query;
-            			}
-            			request.getSession().setAttribute(CommonDefined.PRE_REQUEST, url);
-            		}
-                	logger.debug("user not found");
-                }
-    		}
+//    		FilterInvocation fi = (FilterInvocation) object;
+//    		HttpServletRequest request = fi.getHttpRequest();
+//    		String username = request.getParameter(USERNAME_KEY);
+//    		String password = request.getParameter(PASSWORD_KEY);
+//    		if(username!=null && password!=null){
+////    			User loadedUser = userManager.loadUser(username);
+//                TenantUser user = tenantUserService.quaryByUsernameAndPassword(username,password);   
+//                if (user!=null) {   
+//                    UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(user.getId(), user.getPassword());
+//                    authRequest.setDetails(authenticationDetailsSource.buildDetails(request));
+//                    SecurityContextHolder.getContext().setAuthentication(authRequest);
+//                }else{
+//            		String url = request.getRequestURI();
+//            		String query = request.getQueryString();
+//            		if(url!=null && !"".equals(url) && !"/".equals(url)){
+//            			if(query!=null && !"".equals(query)){
+//            				url += "?" + query;
+//            			}
+//            			request.getSession().setAttribute(CommonDefined.PRE_REQUEST, url);
+//            		}
+//                	logger.debug("user not found");
+//                }
+//    		}
     	}
 
         return this.getAllConfigAttributes();

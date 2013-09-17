@@ -2,14 +2,14 @@ package com.bestaone.meishi.model;
 
 import java.util.Date;
 
-import com.bestaone.meishi.api.user.User;
+import com.bestaone.meishi.api.user.SecurityUser;
 import com.bestaone.meishi.api.user.UserStatus;
 
 /**
  * 用户
  * @author 张国圣
  */
-public class UserImpl extends User<UserImpl> {
+public class UserImpl extends SecurityUser<UserImpl> {
 
 	private static final long serialVersionUID = -8819296118180810212L;
 
