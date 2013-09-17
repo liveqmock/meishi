@@ -1,5 +1,7 @@
 
 $(function(){
+	
+//	$('.btn').button('loading');
 
 	//客服
 	$('#divQQbox').css('top', $(document).scrollTop() + $(window).height()/2);

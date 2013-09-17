@@ -16,20 +16,6 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-		<property name="messageConverters">
-			<list>
-				<bean class="org.springframework.http.converter.StringHttpMessageConverter">
-					<property name="supportedMediaTypes">
-						<list>
-							<value>text/plain;charset=UTF-8</value>
-						</list>
-					</property>
-				</bean>
-			</list>
-		</property>
-	</bean>
-	
 	<!-- Configures Handler Interceptors -->
     <mvc:interceptors>
         <!-- Changes the locale when a 'locale' request parameter is sent; e.g. /?locale=de -->
@@ -45,6 +31,23 @@
 
 	<mvc:annotation-driven />
 	<context:component-scan base-package="com.bestaone.meishi.front.web.controller" />
+
+	<!-- 支持返回json -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">      
+        <property name="messageConverters">      
+            <list >      
+                <ref bean="mappingJacksonHttpMessageConverter" />      
+            </list>      
+        </property>      
+    </bean> 
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">    
+	    <property name="supportedMediaTypes">    
+	        <list>    
+	            <value>application/json;charset=UTF-8</value>    
+	       </list>    
+	    </property>  
+	</bean> 
+	<!-- 支持返回json -->
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />

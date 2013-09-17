@@ -37,24 +37,22 @@ body {
 </head>
 <body>
 
-<% 
-String error = request.getParameter("error");
-if("1".equals(error)){
-	%>
-	<span>用户名或者密码错误！</span>
-	<%
-}
-%>
-
 <div class="container">
-	<form action="j_spring_security_check" method="POST" class="form-signin">
-		<h2 class="form-signin-heading">请登录</h2>
-		<input name='username' value="" type="text" placeholder="Email address" class="input-block-level">
-		<input name='password' value="" type="password" placeholder="Password" class="input-block-level">
-		<label class="checkbox"> <input type="checkbox" value="remember-me">记住我</label>
-		<button type="submit" class="btn btn-large btn-primary">登录</button>
+	
+	<form id="loginForm" action="j_spring_security_check" method="POST" class="form-signin">
+		<fieldset>
+			<h2 class="form-signin-heading">请登录</h2>
+			<input id="username" name='username' value="" type="text" placeholder="Email address" class="input-block-level">
+			<input id="password" name='password' value="" type="password" placeholder="Password" class="input-block-level">
+			<div id="tip" class="alert alert-warning dn">用户名或密码错误</div>
+			<label class="checkbox"> <input type="checkbox" value="remember-me">记住我</label>
+			<button id="loginBut" type="submit" class="btn btn-large btn-primary">登录</button>
+		</fieldset>
 	</form>
+	
 </div>
+
+<script src="/static/js/web/login.js" type="text/javascript"></script>
 
 </body>
 </html>

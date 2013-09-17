@@ -35,7 +35,7 @@
 							<li><a href="#">One more separated link</a></li>
 						</ul>
 					</li>
-					<li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginDlg">登录</a></li>
+					<li><a id="loginItem" href="javascript:void(0)" data-toggle="modal" data-target="#loginDlg">登录</a></li>
 					<li class="dropdown">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="glyphicon glyphicon-user"></i>
@@ -613,25 +613,26 @@
 						<fieldset>
 							<label class="block clearfix"> 
 								<span class="block input-icon input-icon-right"> 
-									<input type="text" placeholder="Username" class="form-control">
+									<input id="username" type="text" placeholder="Username" class="form-control">
 									<!-- <i class="glyphicon glyphicon-user"></i> -->
 								</span>
 							</label> 
 							<label class="block clearfix"> 
 								<span class="block input-icon input-icon-right"> 
-									<input type="password" placeholder="Password" class="form-control">
+									<input id="password" type="password" placeholder="Password" class="form-control">
 									<!-- <i class="glyphicon glyphicon-lock"></i> -->
 								</span>
 							</label>
 						</fieldset>
 					</form>
 				</div>
+				<div id="tip" class="alert alert-warning dn">用户名或密码错误</div>
 				<div class="modal-footer">
 					<label class="fl">
           				<input type="checkbox" value="remember-me"> 记住我
         			</label>
 					<a class="btn-link">忘记密码？</a>
-					<button type="button" class="btn btn-primary">登录</button>
+					<button id="loginBut" type="button" data-loading-text="登录中..." class="btn btn-primary">登录</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
@@ -643,6 +644,7 @@
 	<!-- js -->
 	<script src="http://api.map.baidu.com/api?v=1.5&ak=79371730a308db33cf477bf3ae05fa63" type="text/javascript"></script>
 	<script src="/static/js/plugins/baidu.map.js" type="text/javascript"></script>
+	<script src="/static/js/web/nav.js" type="text/javascript"></script>
 	<script src="/static/js/web/index.js" type="text/javascript"></script>
 
 </body>

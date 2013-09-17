@@ -25,6 +25,7 @@
 	<http pattern="/index" security="none" />
 	<!-- 登录页面和忘记密码页面不过滤  -->
 	<http pattern="/login" security="none" />
+	<http pattern="/loginFailure" security="none" />
 	<http pattern="/jsp/forgotpassword.jsp" security="none" />
 
 	<http use-expressions="true" entry-point-ref="authenticationEntryPoint" access-denied-page="/static/exception/accessDenied.html">
@@ -77,12 +78,12 @@
 	</beans:bean>
 	
 	<beans:bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
-		<beans:property name="defaultFailureUrl" value="/login?error=1" />
+		<beans:property name="defaultFailureUrl" value="/loginFailure" />
 	</beans:bean>
 	
 	<beans:bean id="successHandler" class="com.bestaone.meishi.front.web.security.UrlAuthenticationSuccessHandler">
 		<beans:property name="alwaysUseDefaultTargetUrl" value="true"/>
-		<beans:property name="defaultTargetUrl" value="/home"/>
+		<beans:property name="defaultTargetUrl" value="/loginSuccess"/>
 	</beans:bean>
 	
 	<!-- 注销过滤器，完成前台用户注销时的定向功能 -->  

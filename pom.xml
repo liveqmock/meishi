@@ -421,6 +421,41 @@
 				<artifactId>mail</artifactId>
 				<version>${mail.version}</version>
 			</dependency>
+			
+			<!-- json支持  -->
+	        <dependency>
+	            <groupId>org.json</groupId>
+	            <artifactId>json</artifactId>
+	            <version>${json.version}</version>
+	        </dependency>
+			<dependency>  
+			    <groupId>net.sf.json-lib</groupId>  
+			    <artifactId>json-lib</artifactId>  
+			    <version>${json.lib.version}</version>  
+			    <classifier>jdk15</classifier>  
+			</dependency>
+			<dependency>  
+				<groupId>org.codehaus.jackson</groupId>  
+			    <artifactId>jackson-core-lgpl</artifactId>  
+			    <version>${jackson.version}</version>  
+			</dependency>  
+			<dependency>  
+				<groupId>org.codehaus.jackson</groupId>  
+			    <artifactId>jackson-core-asl</artifactId>  
+			    <version>${jackson.version}</version>  
+			</dependency>  
+			<dependency>  
+				<groupId>org.codehaus.jackson</groupId>  
+			    <artifactId>jackson-mapper-asl</artifactId>  
+			    <version>${jackson.version}</version>  
+			</dependency>  
+			<dependency>  
+			    <groupId>org.codehaus.jackson</groupId>  
+			    <artifactId>jackson-mapper-lgpl</artifactId>  
+			    <version>${jackson.version}</version>  
+			</dependency> 
+			<!-- json支持  -->
+			
 		</dependencies>
 	</dependencyManagement>
 
@@ -475,6 +510,9 @@
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<velocity.version>1.7</velocity.version>
 		<mail.version>1.4.5</mail.version>
+		<json.version>20090211</json.version>
+		<json.lib.version>2.4</json.lib.version>
+		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
 </project>
