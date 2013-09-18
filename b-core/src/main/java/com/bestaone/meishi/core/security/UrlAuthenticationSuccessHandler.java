@@ -1,4 +1,4 @@
-package com.bestaone.meishi.front.web.security;
+package com.bestaone.meishi.core.security;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

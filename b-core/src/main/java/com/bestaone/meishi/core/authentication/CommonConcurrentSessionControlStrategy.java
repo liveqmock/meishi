@@ -17,23 +17,23 @@ import org.springframework.security.web.authentication.session.SessionFixationPr
  * 同时登录时的Session控制
  * @author Ricky
  */
-public class TeamsConcurrentSessionControlStrategy extends SessionFixationProtectionStrategy {
+public class CommonConcurrentSessionControlStrategy extends SessionFixationProtectionStrategy {
 	
 	/**
 	 * 每个用户允许的最大Session数
 	 */
 	private static final int MAXIMUM_SESSIONS =2;
 	
-	private TeamsSessionRegistry sessionRegistry;
+	private CommonSessionRegistry sessionRegistry;
 
-	public TeamsConcurrentSessionControlStrategy(TeamsSessionRegistry sessionRegistry) {
+	public CommonConcurrentSessionControlStrategy(CommonSessionRegistry sessionRegistry) {
 		super.setAlwaysCreateSession(true);
 		this.sessionRegistry = sessionRegistry;
 	}
 	
 	@Override
     public void onAuthentication(Authentication authentication, HttpServletRequest request,HttpServletResponse response) {
-		TeamsAuthenticationToken teamsAuthentication = (TeamsAuthenticationToken)authentication;
+		CommonAuthenticationToken teamsAuthentication = (CommonAuthenticationToken)authentication;
         checkAuthenticationAllowed(teamsAuthentication, request);
         super.onAuthentication(authentication, request, response);
         sessionRegistry.registerNewSession(request.getSession(), teamsAuthentication);
@@ -58,7 +58,7 @@ public class TeamsConcurrentSessionControlStrategy extends SessionFixationProtec
         leastRecentlyUsed.expireNow();
     }
 
-    private void checkAuthenticationAllowed(TeamsAuthenticationToken authentication, HttpServletRequest request)throws AuthenticationException {
+    private void checkAuthenticationAllowed(CommonAuthenticationToken authentication, HttpServletRequest request)throws AuthenticationException {
         final List<SessionInformation> sessions = sessionRegistry.getAllSessions(authentication, false);
         int sessionCount = sessions.size();
         int allowedSessions = MAXIMUM_SESSIONS;
@@ -93,7 +93,7 @@ public class TeamsConcurrentSessionControlStrategy extends SessionFixationProtec
     @Override
     protected void onSessionChange(String originalSessionId, HttpSession newSession, Authentication auth) {
         // Update the session registry
-    	TeamsAuthenticationToken teamsAuthentication = (TeamsAuthenticationToken)auth;
+    	CommonAuthenticationToken teamsAuthentication = (CommonAuthenticationToken)auth;
         sessionRegistry.removeSessionInformation(originalSessionId);
         sessionRegistry.registerNewSession(newSession, teamsAuthentication);
     }

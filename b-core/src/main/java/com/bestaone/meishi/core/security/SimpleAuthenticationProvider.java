@@ -1,4 +1,4 @@
-package com.bestaone.meishi.front.web.security;
+package com.bestaone.meishi.core.security;
 
 import java.util.Collection;
 
@@ -13,73 +13,72 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.util.Assert;
 
+import com.bestaone.meishi.api.tenant.Tenant;
+import com.bestaone.meishi.api.tenant.TenantService;
 import com.bestaone.meishi.api.user.SecurityUser;
-import com.bestaone.meishi.core.authentication.TeamsAuthenticationToken;
-import com.bestaone.meishi.core.authentication.exception.TenantNotFoundException;
+import com.bestaone.meishi.api.user.SecurityUserService;
+import com.bestaone.meishi.core.authentication.CommonAuthenticationToken;
 import com.bestaone.meishi.core.authentication.exception.UserNotFoundException;
 import com.bestaone.meishi.core.authentication.exception.WrongPasswordException;
-import com.bestaone.meishi.model.UserImpl;
-import com.bestaone.meishi.service.UserImplService;
 
 /**
  * 登录验证
  * @author zhangguosheng
  */
-public class TeamsAuthenticationProvider implements AuthenticationProvider {
+public class SimpleAuthenticationProvider implements AuthenticationProvider {
 
-	private final Logger logger = LoggerFactory.getLogger(TeamsAuthenticationProvider.class);
+	private final Logger logger = LoggerFactory.getLogger(SimpleAuthenticationProvider.class);
 	
 	@Autowired
-	private UserImplService userImplService;
+	private SecurityUserService securityUserService;
+	
+	@Autowired
+	private TenantService tenantService;
 
 	/**
 	 * 携带数据为 {@link TeamsAuthenticationToken}，包含Tenant信息
 	 */
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-		Assert.isInstanceOf(TeamsAuthenticationToken.class, authentication,"Only TeamsAuthenticationToken is supported");
+		Assert.isInstanceOf(CommonAuthenticationToken.class, authentication,"Only TeamsAuthenticationToken is supported");
 		String username = null;
 		
 		if (authentication.getPrincipal() instanceof User) {
 			username = ((User) authentication.getPrincipal()).getUsername();
-        }
-        else {
+        }else {
         	username = authentication.getPrincipal().toString();
         }
 
-		SecurityUser<UserImpl> user = null;
-		Object tenant = new Object();
+		SecurityUser<?> user = null;
+		Tenant<?> tenant = null;
 		
 		try {
-			user = userImplService.quaryByUsername(username);
+			user = securityUserService.quaryByUsername(username);
 			if(user==null){
+				logger.error("User '" + authentication.getName() + "' not found");
 				throw new UserNotFoundException("用户不存在");
+			}else{
+				tenant = tenantService.quaryByUserId(user.getId());
 			}
-		} catch (TenantNotFoundException tenantNotFound) {
-			logger.error("Tenant '" + ((TeamsAuthenticationToken) authentication).getTenant() + "' not found",tenantNotFound);
-			throw tenantNotFound;
-		}catch (UserNotFoundException userNotFound) {
-			logger.error("User '" + authentication.getName() + "' not found",userNotFound);
-			throw userNotFound;
-		} catch (Exception repositoryProblem) {
+		}catch (Exception repositoryProblem) {
 			logger.error(repositoryProblem.getMessage(),repositoryProblem);
 			throw new AuthenticationServiceException(repositoryProblem.getMessage(), repositoryProblem);
 		}
 	
-		additionalAuthenticationChecks(user, (TeamsAuthenticationToken) authentication);
+		additionalAuthenticationChecks(user, (CommonAuthenticationToken) authentication);
 
 		return createSuccessAuthentication(authentication,tenant, user);
 	}
 
 	@Override
 	public boolean supports(Class<?> authentication) {
-		return (TeamsAuthenticationToken.class.isAssignableFrom(authentication));
+		return (CommonAuthenticationToken.class.isAssignableFrom(authentication));
 	}
 
 	/**
 	 * 用户密码验证
 	 */
-	protected void additionalAuthenticationChecks(SecurityUser<UserImpl> user, TeamsAuthenticationToken authentication)
+	protected void additionalAuthenticationChecks(SecurityUser<?> user, CommonAuthenticationToken authentication)
 			throws AuthenticationException {
 
 		if (authentication.getCredentials() == null) {
@@ -92,13 +91,13 @@ public class TeamsAuthenticationProvider implements AuthenticationProvider {
 	 * 此处返回的Authentication中携带的principal对象为TeamsUser
 	 */
 	@SuppressWarnings("unchecked")
-	protected Authentication createSuccessAuthentication(Authentication authentication, Object tenant, SecurityUser<UserImpl> user) {
+	protected Authentication createSuccessAuthentication(Authentication authentication, Tenant<?> tenant, SecurityUser<?> user) {
 		Object credentials = authentication.getCredentials();
 		Collection<GrantedAuthority> authorities = null;
 		if(user!=null){
 			authorities = (Collection<GrantedAuthority>) user.getAuthorities();
 		}
-		TeamsAuthenticationToken result = new TeamsAuthenticationToken(tenant, user, credentials, authorities);
+		CommonAuthenticationToken result = new CommonAuthenticationToken(tenant, user, credentials, authorities);
 		result.setDetails(authentication.getDetails());
 		return result;
 	}

@@ -1,4 +1,4 @@
-package com.bestaone.meishi.front.web.security;
+package com.bestaone.meishi.core.security;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package com.bestaone.meishi.front.web.security;
+package com.bestaone.meishi.core.security;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,8 +15,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 
-import com.bestaone.meishi.core.authentication.TeamsAuthenticationToken;
-import com.bestaone.meishi.core.security.AuthenticationProcessor;
+import com.bestaone.meishi.core.authentication.CommonAuthenticationToken;
 
 /**
  * 登录过滤器
@@ -62,7 +61,7 @@ public class LoginAuthenticationFilter extends AbstractAuthenticationProcessingF
 		String tenantid = obtainTenantid(request);
 		String password = obtainPassword(request);
 		
-		TeamsAuthenticationToken authRequest = new TeamsAuthenticationToken(tenantid,username,password);
+		CommonAuthenticationToken authRequest = new CommonAuthenticationToken(tenantid,username,password);
 		setDetails(request, authRequest);
 		return getAuthenticationManager().authenticate(authRequest);
 	}
@@ -90,7 +89,7 @@ public class LoginAuthenticationFilter extends AbstractAuthenticationProcessingF
 		return password == null ? "" : password;
 	}
 	
-	protected void setDetails(HttpServletRequest request, TeamsAuthenticationToken authRequest) {
+	protected void setDetails(HttpServletRequest request, CommonAuthenticationToken authRequest) {
         authRequest.setDetails(authenticationDetailsSource.buildDetails(request));
     }
 	

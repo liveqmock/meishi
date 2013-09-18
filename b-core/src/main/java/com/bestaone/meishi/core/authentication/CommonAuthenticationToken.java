@@ -5,7 +5,7 @@ import java.util.Collection;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 
-public class TeamsAuthenticationToken extends AbstractAuthenticationToken {
+public class CommonAuthenticationToken extends AbstractAuthenticationToken {
 	
 	private static final long serialVersionUID = -2469458559362807924L;
 
@@ -21,7 +21,7 @@ public class TeamsAuthenticationToken extends AbstractAuthenticationToken {
 	 * @param principal 用户信息
 	 * @param credentials 密码信息
 	 */
-	public TeamsAuthenticationToken(Object tenant, Object principal, Object credentials) {
+	public CommonAuthenticationToken(Object tenant, Object principal, Object credentials) {
 		super(null);
 		this.principal = principal;
 		this.credentials = credentials;
@@ -29,7 +29,7 @@ public class TeamsAuthenticationToken extends AbstractAuthenticationToken {
 		setAuthenticated(false);
 	}
 
-	public TeamsAuthenticationToken(Object tenant, Object principal, Object credentials, Collection<? extends GrantedAuthority> collection) {
+	public CommonAuthenticationToken(Object tenant, Object principal, Object credentials, Collection<? extends GrantedAuthority> collection) {
 		super(collection);
 		this.tenant = tenant;
 		this.principal = principal;
@@ -68,7 +68,7 @@ public class TeamsAuthenticationToken extends AbstractAuthenticationToken {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		TeamsAuthenticationToken other = (TeamsAuthenticationToken) obj;
+		CommonAuthenticationToken other = (CommonAuthenticationToken) obj;
 		if (principal == null) {
 			if (other.principal != null)
 				return false;

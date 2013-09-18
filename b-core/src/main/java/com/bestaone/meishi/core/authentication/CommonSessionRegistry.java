@@ -19,14 +19,14 @@ import org.springframework.security.core.session.SessionInformation;
 import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.util.Assert;
 
-public class TeamsSessionRegistry extends SessionRegistryImpl{
+public class CommonSessionRegistry extends SessionRegistryImpl{
 
-	protected final Log logger = LogFactory.getLog(TeamsSessionRegistry.class);
+	protected final Log logger = LogFactory.getLog(CommonSessionRegistry.class);
 
     /** <principal:Object,SessionIdSet> */
     private final ConcurrentMap<Object,Set<String>> principals = new ConcurrentHashMap<Object,Set<String>>();
     /** <sessionId:Object,SessionInformation> */
-    private final Map<String, TeamsSessionInformation> sessionIds = new ConcurrentHashMap<String, TeamsSessionInformation>();
+    private final Map<String, CommonSessionInformation> sessionIds = new ConcurrentHashMap<String, CommonSessionInformation>();
 
     //~ Methods ========================================================================================================
 
@@ -66,7 +66,7 @@ public class TeamsSessionRegistry extends SessionRegistryImpl{
 
         return sessionIds.get(sessionId);
     }
-    public TeamsSessionInformation getTeamsSessionInformation(String sessionId) {
+    public CommonSessionInformation getTeamsSessionInformation(String sessionId) {
     	return sessionIds.get(sessionId);
     }
 
@@ -98,7 +98,7 @@ public class TeamsSessionRegistry extends SessionRegistryImpl{
             removeSessionInformation(session.getId());
         }
 
-        sessionIds.put(session.getId(), new TeamsSessionInformation(principal, session, new Date()));
+        sessionIds.put(session.getId(), new CommonSessionInformation(principal, session, new Date()));
 
         Set<String> sessionsUsedByPrincipal = principals.get(principal);
 

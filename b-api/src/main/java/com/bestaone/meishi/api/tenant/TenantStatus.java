@@ -1,16 +1,16 @@
-package com.bestaone.meishi.api.user;
+package com.bestaone.meishi.api.tenant;
 
 /**
- * 用户状态
+ * 租户状态
  * @author zhangguosheng
  */
-public enum UserStatus {
+public enum TenantStatus {
 
 	enable("可用"), disable("不可用");
 	
 	private String desc;
 
-	private UserStatus(String desc) {
+	private TenantStatus(String desc) {
 		this.desc = desc;
 	}
 

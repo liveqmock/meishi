@@ -1,4 +1,4 @@
-package com.bestaone.meishi.front.web.security;
+package com.bestaone.meishi.core.security;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
  * 用户注销后的事件处理
  * @author Ricky
  */
-public class TeamsSecurityContextLogoutHandler extends SecurityContextLogoutHandler {
+public class SimpleSecurityContextLogoutHandler extends SecurityContextLogoutHandler {
 	
 	private SessionRegistry sessionRegistry;
 	

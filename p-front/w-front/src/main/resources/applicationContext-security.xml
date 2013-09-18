@@ -47,24 +47,24 @@
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />  
 	</http>
 	
-	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.TeamsSessionRegistry" />
+	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.CommonSessionRegistry" />
 	
-	<beans:bean id="sessionStrategy" class="com.bestaone.meishi.core.authentication.TeamsConcurrentSessionControlStrategy">
+	<beans:bean id="sessionStrategy" class="com.bestaone.meishi.core.authentication.CommonConcurrentSessionControlStrategy">
 		<beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
 	</beans:bean>
 
 	<!-- 一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性，我们的所有控制将在这三个类中实现，解释详见具体配置  -->
-    <beans:bean id="securityFilter" class="com.bestaone.meishi.front.web.security.SimpleFilterSecurityInterceptor">
+    <beans:bean id="securityFilter" class="com.bestaone.meishi.core.security.SimpleFilterSecurityInterceptor">
         <beans:property name="authenticationManager" ref="authenticationManager" />
         <beans:property name="accessDecisionManager" ref="simpleAccessDecisionManager" />
     </beans:bean>
  
  	<!-- 认证管理器  -->
 	<authentication-manager alias="authenticationManager">
-	    <authentication-provider ref="teamsAuthenticationProvider" />
+	    <authentication-provider ref="commonAuthenticationProvider" />
 	</authentication-manager>
 
-	<beans:bean id="teamsAuthenticationProvider" class="com.bestaone.meishi.front.web.security.TeamsAuthenticationProvider" />
+	<beans:bean id="commonAuthenticationProvider" class="com.bestaone.meishi.core.security.SimpleAuthenticationProvider" />
 	
 	<!-- 未登录的切入点 -->
     <beans:bean id="authenticationEntryPoint" class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
@@ -77,7 +77,7 @@
 		<beans:bean class="com.bestaone.meishi.core.security.DynamicPasswdAuthentication" />
 	</util:list>
 	
-	<beans:bean id="loginFilter" class="com.bestaone.meishi.front.web.security.LoginAuthenticationFilter">
+	<beans:bean id="loginFilter" class="com.bestaone.meishi.core.security.LoginAuthenticationFilter">
 		<beans:property name="sessionAuthenticationStrategy" ref="sessionStrategy"/>
 		<beans:property name="authenticationProcessors" ref="authenticationProcessors"/>
 		<beans:property name="authenticationManager" ref="authenticationManager"/>
@@ -90,7 +90,7 @@
 		<beans:property name="defaultFailureUrl" value="/loginFailure" />
 	</beans:bean>
 	
-	<beans:bean id="successHandler" class="com.bestaone.meishi.front.web.security.UrlAuthenticationSuccessHandler">
+	<beans:bean id="successHandler" class="com.bestaone.meishi.core.security.UrlAuthenticationSuccessHandler">
 		<beans:property name="alwaysUseDefaultTargetUrl" value="true"/>
 		<beans:property name="defaultTargetUrl" value="/loginSuccess"/>
 	</beans:bean>

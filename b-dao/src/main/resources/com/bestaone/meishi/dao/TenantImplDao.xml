@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bestaone.meishi.dao.TenantImplDao">
+
+	<resultMap type="com.bestaone.meishi.model.TenantImpl" id="tenantResultMap">
+		<id property="id" column="ID" />
+		<id property="createrTime" column="CREATER_TIME" />
+		<id property="status" column="STATUS" />
+	</resultMap>
+	
+	<sql id="SELECT_A">
+		SELECT 	T.*
+		FROM tenant T
+	</sql>
+	
+	<insert id="insert" parameterType="com.bestaone.meishi.model.TenantImpl">
+		INSERT INTO tenant(ID,CREATER_TIME,STATUS)
+		VALUES(#{id},#{createrTime},#{status})
+	</insert>
+	
+	<delete id="delete" parameterType="java.io.Serializable">
+		DELETE FROM tenant WHERE ID = #{id}
+	</delete>
+	
+	<update id="update" parameterType="com.bestaone.meishi.model.TenantImpl">
+  		UPDATE tenant SET
+    		CREATER_TIME = #{createrTime},
+    		STATUS = #{status}
+  		WHERE ID = #{id}
+	</update>
+	
+	<select id="getById" parameterType="java.io.Serializable" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">
+		<include refid="SELECT_A"/> WHERE T.ID = #{id}
+	</select>
+	
+	<select id="quaryAll" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">
+		<include refid="SELECT_A"/>
+	</select>
+	
+	<select id="pageAll" resultMap="tenantResultMap">
+		<include refid="SELECT_A"/>
+	</select>
+
+	<select id="quaryByUserId" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">
+		<include refid="SELECT_A"/>
+		LEFT JOIN tenant_user TU ON TU.TENANT_ID=T.ID
+		WHERE TU.USER_ID=#{userId}
+	</select>
+	
+</mapper>
