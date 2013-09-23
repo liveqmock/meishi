@@ -42,18 +42,22 @@ public class SimpleAuthenticationProvider implements AuthenticationProvider {
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 		Assert.isInstanceOf(CommonAuthenticationToken.class, authentication,"Only TeamsAuthenticationToken is supported");
 		String username = null;
+		String password = null;
 		
 		if (authentication.getPrincipal() instanceof User) {
-			username = ((User) authentication.getPrincipal()).getUsername();
+			User user = (User) authentication.getPrincipal();
+			username = user.getUsername();
+			password = user.getPassword();
         }else {
         	username = authentication.getPrincipal().toString();
+        	password = authentication.getCredentials().toString();
         }
 
 		SecurityUser<?> user = null;
 		Tenant<?> tenant = null;
 		
 		try {
-			user = securityUserService.quaryByUsername(username);
+			user = securityUserService.quaryByUsernameAndPassword(username,password);
 			if(user==null){
 				logger.error("User '" + authentication.getName() + "' not found");
 				throw new UserNotFoundException("用户不存在");
