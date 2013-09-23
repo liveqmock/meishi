@@ -23,6 +23,7 @@
 	<http pattern="/index.jsp" security="none" />
 	<http pattern="/index*.jsp" security="none" />
 	<http pattern="/index" security="none" />
+
 	<!-- 登录页面和忘记密码页面不过滤  -->
 	<http pattern="/login" security="none" />
 	<http pattern="/loginFailure" security="none" />

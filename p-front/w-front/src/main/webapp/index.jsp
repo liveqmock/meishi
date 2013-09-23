@@ -36,7 +36,7 @@
 						</ul>
 					</li>
 					<li><a id="loginItem" href="javascript:void(0)" data-toggle="modal" data-target="#loginDlg">登录</a></li>
-					<li class="dropdown">
+					<li id="loginUserItem" class="dropdown dn">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="glyphicon glyphicon-user"></i>
 							bestaone <b class="caret"></b>
@@ -44,6 +44,8 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">个人中心</a></li>
 							<li><a href="#">我的收藏</a></li>
+							<li class="divider"></li>
+							<li><a href="#">注销</a></li>
 						</ul>
 					</li>
 				</ul>
