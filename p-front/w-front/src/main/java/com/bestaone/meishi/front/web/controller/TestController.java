@@ -1,11 +1,11 @@
 package com.bestaone.meishi.front.web.controller;
 
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.bestaone.meishi.model.UserImpl;
+import com.bestaone.meishi.api.user.SecurityUser;
+import com.bestaone.meishi.core.UserContext;
 
 
 @Controller
@@ -19,8 +19,8 @@ public class TestController {
 	 */
 	@RequestMapping(value="/debug")
 	public String debug(Model model){
-		UserImpl userDetails = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		model.addAttribute("username", userDetails.getUsername());
+		SecurityUser<?> currentUser = UserContext.getCurrentUser();
+		model.addAttribute("username", currentUser.getUsername());
 		return "test/debug";
 	}
 	

@@ -23,16 +23,23 @@ public class UserContext {
 		if (principal == null) {
 			return null;
 		}
-//		if (User.class.isInstance(principal)) {
-//			User user = (User) principal;
-//			return user;
-//		}
 		if (SecurityUser.class.isInstance(principal)) {
 			SecurityUser<?> user = (SecurityUser<?>) principal;
 			return user;
 		}
 		
 		return null;
+	}
+	
+	/**
+	 * 设置用户认证
+	 * @param tenant
+	 * @param user
+	 */
+	public static void initAuthentication(Tenant<?> tenant, SecurityUser<?> user) {
+		SecurityContext securityContext = SecurityContextHolder.getContext();
+		CommonAuthenticationToken authentication = new CommonAuthenticationToken(tenant, user, null, null);
+		securityContext.setAuthentication(authentication);
 	}
 	
 	/**

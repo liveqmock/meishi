@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
 <head>
@@ -39,12 +40,14 @@ body {
 
 <div class="container">
 	
-	<form id="loginForm" action="j_spring_security_check" method="POST" class="form-signin">
+	<form id="loginForm" action="loginValidation" method="POST" class="form-signin">
 		<fieldset>
 			<h2 class="form-signin-heading">请登录</h2>
 			<input id="username" name='username' value="" type="text" placeholder="Email address" class="input-block-level">
 			<input id="password" name='password' value="" type="password" placeholder="Password" class="input-block-level">
-			<div id="tip" class="alert alert-warning dn">用户名或密码错误</div>
+			<c:if test="${param.error==1}">
+				<div id="tip" class="alert alert-warning">用户名或密码错误</div>
+			</c:if>
 			<label class="checkbox"> <input type="checkbox" value="remember-me">记住我</label>
 			<button id="loginBut" type="submit" class="btn btn-large btn-primary">登录</button>
 		</fieldset>

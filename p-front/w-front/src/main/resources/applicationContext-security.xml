@@ -22,7 +22,6 @@
 	
 	<http pattern="/index.jsp" security="none" />
 	<http pattern="/index*.jsp" security="none" />
-	<http pattern="/index" security="none" />
 
 	<!-- 登录页面和忘记密码页面不过滤  -->
 	<http pattern="/login" security="none" />
@@ -42,10 +41,12 @@
         </session-management>
 		<!-- 增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，这个filter位于FILTER_SECURITY_INTERCEPTOR之前 -->
 		<custom-filter ref="securityFilter" before="FILTER_SECURITY_INTERCEPTOR" />
-		<!-- 登录过滤器 -->
+		<!-- 登录过滤器
 		<custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER" />
-		<!-- 注销过滤器 -->
+		 -->
+		<!-- 注销过滤器
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />  
+		 -->
 	</http>
 	
 	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.CommonSessionRegistry" />
