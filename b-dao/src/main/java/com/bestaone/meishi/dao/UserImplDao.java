@@ -11,6 +11,6 @@ public interface UserImplDao extends BaseDao<UserImpl,String> {
 
 	UserImpl quaryByUsernameAndPassword(@Param(value="username") String username, @Param(value="password") String password);
 
-	UserImpl quaryByUsername(@Param(value="username") String username);
+	UserImpl getByUsername(@Param(value="username") String username);
 
 }

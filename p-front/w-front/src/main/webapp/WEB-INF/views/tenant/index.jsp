@@ -46,7 +46,7 @@
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">个人中心</a></li>
+							<li><a href="/console">个人中心</a></li>
 							<li><a href="#">我的收藏</a></li>
 							<li class="divider"></li>
 							<li><a href="/logout">注销</a></li>

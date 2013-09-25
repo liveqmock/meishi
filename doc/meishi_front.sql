@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50530
 File Encoding         : 65001
 
-Date: 2013-09-18 12:35:45
+Date: 2013-09-25 15:17:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -54,15 +54,16 @@ CREATE TABLE `role` (
 DROP TABLE IF EXISTS `tenant`;
 CREATE TABLE `tenant` (
   `ID` varchar(40) NOT NULL DEFAULT '',
+  `KEY` varchar(20) NOT NULL,
   `CREATER_TIME` datetime DEFAULT NULL,
   `STATUS` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`ID`)
+  PRIMARY KEY (`ID`,`KEY`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tenant
 -- ----------------------------
-INSERT INTO `tenant` VALUES ('222', '2013-09-18 11:28:18', null);
+INSERT INTO `tenant` VALUES ('222', 'zgs', '2013-09-18 11:28:18', null);
 
 -- ----------------------------
 -- Table structure for `tenant_user`
@@ -86,13 +87,13 @@ INSERT INTO `tenant_user` VALUES ('333', '222', 'c70dc989-be6e-4285-8244-932f0f5
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `ID` varchar(40) NOT NULL,
-  `USERNAME` varchar(20) DEFAULT NULL,
+  `USERNAME` varchar(20) NOT NULL DEFAULT '',
   `PASSWORD` varchar(20) DEFAULT NULL,
   `CREATER_TIME` datetime DEFAULT NULL,
   `LAST_LOGIN_TIME` datetime DEFAULT NULL,
   `LAST_LOGIN_IP` varchar(20) DEFAULT NULL,
   `STATUS` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`ID`)
+  PRIMARY KEY (`ID`,`USERNAME`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------

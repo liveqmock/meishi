@@ -25,8 +25,8 @@ public class UserImplServiceImpl extends BaseEntityService<UserImpl, String> imp
 	}
 
 	@Override
-	public UserImpl quaryByUsername(String username) {
-		return userImplDao.quaryByUsername(username);
+	public UserImpl getByUsername(String username) {
+		return userImplDao.getByUsername(username);
 	}
 
 }

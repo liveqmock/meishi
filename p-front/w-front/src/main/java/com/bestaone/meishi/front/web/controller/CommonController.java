@@ -28,10 +28,14 @@ public class CommonController {
 	@Autowired
 	private UserImplService userImplService;
 	
+	/**
+	 * 首页
+	 * @param httpSession
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping({"","/","index"})
 	public String index(HttpSession httpSession, Model model){
-//		model.addAttribute("currentUser", httpSession.getAttribute(Constant.CURRENT_USER));
-//		tenantImplServiceImpl.getByKey("zgs");
 		return "index";
 	}
 
@@ -45,12 +49,51 @@ public class CommonController {
 		return "login";
 	}
 	
+	/**
+	 * 注册
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="/register")
+	public String register(Model model){
+		return "register";
+	}
+	
+	/**
+	 * 注销
+	 * @param httpSession
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession httpSession, Model model){
 		httpSession.removeAttribute(Constant.CURRENT_USER);
 		return "redirect:/index";
 	}
 	
+	/**
+	 * 用户控制台
+	 * @param httpSession
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="/console")
+	public String console(HttpSession httpSession, Model model){
+		UserImpl user = (UserImpl) httpSession.getAttribute(Constant.CURRENT_USER);
+		if(user!=null){
+			return "redirect:/console/" + user.getUsername();
+		}
+		return "404";
+	}
+	
+	/**
+	 * 登录验证
+	 * @param request
+	 * @param response
+	 * @param httpSession
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value="/loginValidation")
 	public String loginValidation(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
 		String username = request.getParameter("username");
@@ -64,6 +107,14 @@ public class CommonController {
 		}
 	}
 	
+	/**
+	 * ajax登录验证
+	 * @param request
+	 * @param response
+	 * @param httpSession
+	 * @param model
+	 * @return
+	 */
 	@ResponseBody
 	@RequestMapping(value="/ajaxLoginValidation")
 	public ViewData ajaxLoginValidation(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
@@ -79,7 +130,7 @@ public class CommonController {
 	}
 
 	/**
-	 * 登录校验
+	 * 登录home
 	 * @param model
 	 * @return
 	 */
@@ -91,14 +142,6 @@ public class CommonController {
 		return "home";
 	}
 	
-	/**
-	 * 注册
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value="/register")
-	public String register(Model model){
-		return "register";
-	}
+
 	
 }

@@ -8,6 +8,6 @@ public interface UserImplService extends IBaseService<UserImpl, String>, Securit
 
 	UserImpl quaryByUsernameAndPassword(String username, String password);
 
-	UserImpl quaryByUsername(String username);
+	UserImpl getByUsername(String username);
 	
 }
