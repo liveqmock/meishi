@@ -70,11 +70,28 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+	
+	<session-config>
+		<session-timeout>480</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/static/exception/accessDenied.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/static/exception/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/static/exception/500.jsp</location>
+	</error-page>
 	 
 	<welcome-file-list>
 		<welcome-file>/index</welcome-file>
 	</welcome-file-list>
- 
 
 </web-app>

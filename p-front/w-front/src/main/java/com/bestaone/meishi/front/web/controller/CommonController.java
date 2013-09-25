@@ -65,21 +65,19 @@ public class CommonController {
 	}
 	
 	@ResponseBody
-	@RequestMapping(value="/loginFailure")
-	public ViewData loginFailure(Model model){
-		String msg = "ok";
-		Object result = null;
-		return new ViewData(ViewDataStatus.SUCCESS, msg, result);
+	@RequestMapping(value="/ajaxLoginValidation")
+	public ViewData ajaxLoginValidation(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		UserImpl user = userImplService.quaryByUsernameAndPassword(username, password);
+		if(user!=null){
+			httpSession.setAttribute(Constant.CURRENT_USER, user);
+			return new ViewData(ViewDataStatus.SUCCESS, "success", user);
+		}else{
+			return null;
+		}
 	}
-	
-	@ResponseBody
-	@RequestMapping(value="/loginSuccess")
-	public ViewData loginSuccess(Model model){
-		String msg = "ok";
-		Object result = "{id:\"123\"}";
-		return new ViewData(ViewDataStatus.SUCCESS, msg, result);
-	}
-	
+
 	/**
 	 * 登录校验
 	 * @param model

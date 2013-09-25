@@ -42,7 +42,7 @@
 					<li id="loginUserItem" class="dropdown <c:if test="${currentUser==null}">dn</c:if>" value="${currentUser.id}">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="glyphicon glyphicon-user"></i>
-							${currentUser.username}
+							<span class="username">${currentUser.username}</span>
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
