@@ -15,7 +15,6 @@ import com.bestaone.meishi.core.UserContext;
 import com.bestaone.meishi.core.orm.mybatis.Page;
 import com.bestaone.meishi.core.page.ViewData;
 import com.bestaone.meishi.core.page.ViewDataStatus;
-import com.bestaone.meishi.front.web.commom.Constant;
 import com.bestaone.meishi.model.UserImpl;
 import com.bestaone.meishi.service.TenantImplServiceImpl;
 import com.bestaone.meishi.service.UserImplService;
@@ -88,48 +87,18 @@ public class CommonController {
 		}
 		return "404";
 	}
-	
-//	/**
-//	 * 登录验证
-//	 * @param request
-//	 * @param response
-//	 * @param httpSession
-//	 * @param model
-//	 * @return
-//	 */
-//	@RequestMapping(value="/loginValidation")
-//	public String loginValidation(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
-//		String username = request.getParameter("username");
-//		String password = request.getParameter("password");
-//		UserImpl user = userImplService.quaryByUsernameAndPassword(username, password);
-//		if(user!=null){
-//			httpSession.setAttribute(Constant.CURRENT_USER, user);
-//			return "redirect:/index";
-//		}else{
-//			return "redirect:/login?error=1";
-//		}
-//	}
-	
-	/**
-	 * ajax登录验证
-	 * @param request
-	 * @param response
-	 * @param httpSession
-	 * @param model
-	 * @return
-	 */
+
 	@ResponseBody
-	@RequestMapping(value="/ajaxLoginValidation")
-	public ViewData ajaxLoginValidation(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		UserImpl user = userImplService.quaryByUsernameAndPassword(username, password);
-		if(user!=null){
-			httpSession.setAttribute(Constant.CURRENT_USER, user);
-			return new ViewData(ViewDataStatus.SUCCESS, "success", user);
-		}else{
-			return null;
-		}
+	@RequestMapping(value="/ajaxLoginSuccess")
+	public ViewData ajaxLoginSuccess(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
+		SecurityUser<?> user = UserContext.getCurrentUser();
+		return new ViewData(ViewDataStatus.SUCCESS, "success", user);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/ajaxLoginFailure")
+	public ViewData ajaxLoginFailure(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession, Model model){
+		return new ViewData(ViewDataStatus.SUCCESS, "failure", null);
 	}
 
 	/**

@@ -40,16 +40,32 @@
         </session-management>
          -->
          
+		<!-- 只cache get,避免ajax post 被cache 
+		<request-cache ref="httpSessionRequestCache"/>
+		-->
+        <!-- remember me 
+		<remember-me key="bookingtest" />
+		-->
+        
 		<!-- 增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，这个filter位于FILTER_SECURITY_INTERCEPTOR之前 -->
 		<custom-filter ref="securityFilter" before="FILTER_SECURITY_INTERCEPTOR" />
 		<!-- 登录过滤器-->
 		<custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER" />
-		 
+
+		<!-- ajax登录过滤器 -->
+		<custom-filter ref="ajaxLoginFilter" position="FORM_LOGIN_FILTER" />
+		
 		<!-- 注销过滤器-->
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />  
 		 
 	</http>
 	
+	<!-- 
+	<beans:bean id="httpSessionRequestCache" class="org.springframework.security.web.savedrequest.HttpSessionRequestCache">
+		<beans:property name="justUseSavedRequestOnGet" value="true" />
+	</beans:bean>
+	 -->
+	 
 	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.CommonSessionRegistry" />
 	
 	<beans:bean id="sessionStrategy" class="com.bestaone.meishi.core.authentication.CommonConcurrentSessionControlStrategy">
@@ -80,6 +96,7 @@
 		<beans:bean class="com.bestaone.meishi.core.security.DynamicPasswdAuthentication" />
 	</util:list>
 	
+	<!-- 跳转方式登录  -->
 	<beans:bean id="loginFilter" class="com.bestaone.meishi.core.security.LoginAuthenticationFilter">
 		<beans:property name="sessionAuthenticationStrategy" ref="sessionStrategy"/>
 		<beans:property name="authenticationProcessors" ref="authenticationProcessors"/>
@@ -88,14 +105,28 @@
 		<beans:property name="authenticationSuccessHandler" ref="successHandler"/>
 		<beans:property name="filterProcessesUrl" value="/j_spring_security_check"/>
 	</beans:bean>
-	
 	<beans:bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
 		<beans:property name="defaultFailureUrl" value="/login?error=1" />
 	</beans:bean>
-	
 	<beans:bean id="successHandler" class="com.bestaone.meishi.core.security.UrlAuthenticationSuccessHandler">
 		<beans:property name="alwaysUseDefaultTargetUrl" value="true"/>
 		<beans:property name="defaultTargetUrl" value="/"/>
+	</beans:bean>
+	
+	<!-- ajax方式登录  --> 
+	<beans:bean id="ajaxLoginFilter" class="com.bestaone.meishi.core.security.LoginAuthenticationFilter">
+		<beans:property name="sessionAuthenticationStrategy" ref="sessionStrategy"/>
+		<beans:property name="authenticationProcessors" ref="authenticationProcessors"/>
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+		<beans:property name="authenticationFailureHandler" ref="ajaxFailureHandler"/>
+		<beans:property name="authenticationSuccessHandler" ref="ajaxSuccessHandler"/>
+		<beans:property name="filterProcessesUrl" value="/ajaxLoginValidation"/>
+	</beans:bean>
+	<beans:bean id="ajaxFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+		<beans:property name="defaultFailureUrl" value="/ajaxLoginFailure" />
+	</beans:bean>
+	<beans:bean id="ajaxSuccessHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler">
+		<beans:property name="defaultTargetUrl" value="/ajaxLoginSuccess" />
 	</beans:bean>
 	
 	<!-- 注销过滤器，完成前台用户注销时的定向功能 -->  
