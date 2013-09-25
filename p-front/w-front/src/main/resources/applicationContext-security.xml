@@ -32,12 +32,14 @@
 		<intercept-url pattern="/test/a" access="hasRole('ROLE_ADMIN')" />
 		<intercept-url pattern="/test/b" access="hasRole('ROLE_MANAGER')" />
 		<intercept-url pattern="/test/c" access="hasRole('ROLE_USER')" />
-		<intercept-url pattern="/**" access="isAuthenticated()" />
+		<intercept-url pattern="/console/**" access="isAuthenticated()" />
 		
-		<!-- 会话管理 -->
+		<!-- 会话管理
         <session-management invalid-session-url="/static/exception/timeout.html">
             <concurrency-control max-sessions="10" error-if-maximum-exceeded="true" />
         </session-management>
+         -->
+         
 		<!-- 增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，这个filter位于FILTER_SECURITY_INTERCEPTOR之前 -->
 		<custom-filter ref="securityFilter" before="FILTER_SECURITY_INTERCEPTOR" />
 		<!-- 登录过滤器-->
@@ -98,7 +100,7 @@
 	
 	<!-- 注销过滤器，完成前台用户注销时的定向功能 -->  
     <beans:bean id="logoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">  
-        <beans:constructor-arg value="/login" />  
+        <beans:constructor-arg value="/" />  
         <beans:constructor-arg>  
             <beans:list>  
                 <beans:bean class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />  

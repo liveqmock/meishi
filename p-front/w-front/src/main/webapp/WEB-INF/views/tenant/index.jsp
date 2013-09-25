@@ -49,7 +49,7 @@
 							<li><a href="/console">个人中心</a></li>
 							<li><a href="#">我的收藏</a></li>
 							<li class="divider"></li>
-							<li><a href="/logout">注销</a></li>
+							<li><a href="/j_spring_security_logout">注销</a></li>
 						</ul>
 					</li>
 				</ul>
