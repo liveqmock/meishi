@@ -40,7 +40,7 @@ body {
 
 <div class="container">
 	
-	<form id="loginForm" action="loginValidation" method="POST" class="form-signin">
+	<form id="loginForm" action="/j_spring_security_check" method="POST" class="form-signin">
 		<fieldset>
 			<h2 class="form-signin-heading">请登录</h2>
 			<input id="username" name='username' value="" type="text" placeholder="Email address" class="input-block-level">

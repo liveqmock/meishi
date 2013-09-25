@@ -82,8 +82,8 @@
     <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cacheManager-ref="ehcache"/>
     <bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" p:configLocation="classpath:ehcache.xml"/>
 
-	<!--
-	<import resource="classpath:applicationContext-security.xml"/> -->
+	<!-- -->
+	<import resource="classpath:applicationContext-security.xml"/>
 	<import resource="classpath:applicationContext-mail.xml"/>
 	 
 </beans>

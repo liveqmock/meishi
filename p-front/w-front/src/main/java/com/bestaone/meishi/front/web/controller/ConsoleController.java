@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.bestaone.meishi.api.user.SecurityUser;
+import com.bestaone.meishi.core.UserContext;
 import com.bestaone.meishi.service.TenantImplServiceImpl;
 
 @Controller
@@ -19,6 +21,7 @@ public class ConsoleController {
 	
 	@RequestMapping({"","/","index"})
 	public String console(@PathVariable String username, HttpSession httpSession, Model model){
+		SecurityUser<?> user = UserContext.getCurrentUser();
 		return "console/index";
 	}
 	

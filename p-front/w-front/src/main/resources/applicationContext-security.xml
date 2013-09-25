@@ -25,7 +25,6 @@
 
 	<!-- 登录页面和忘记密码页面不过滤  -->
 	<http pattern="/login" security="none" />
-	<http pattern="/loginFailure" security="none" />
 	<http pattern="/jsp/forgotpassword.jsp" security="none" />
 
 	<http use-expressions="true" entry-point-ref="authenticationEntryPoint" access-denied-page="/static/exception/accessDenied.html">
@@ -41,12 +40,12 @@
         </session-management>
 		<!-- 增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，这个filter位于FILTER_SECURITY_INTERCEPTOR之前 -->
 		<custom-filter ref="securityFilter" before="FILTER_SECURITY_INTERCEPTOR" />
-		<!-- 登录过滤器
+		<!-- 登录过滤器-->
 		<custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER" />
-		 -->
-		<!-- 注销过滤器
+		 
+		<!-- 注销过滤器-->
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />  
-		 -->
+		 
 	</http>
 	
 	<beans:bean id="sessionRegistry" class="com.bestaone.meishi.core.authentication.CommonSessionRegistry" />
@@ -89,12 +88,12 @@
 	</beans:bean>
 	
 	<beans:bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
-		<beans:property name="defaultFailureUrl" value="/loginFailure" />
+		<beans:property name="defaultFailureUrl" value="/login?error=1" />
 	</beans:bean>
 	
 	<beans:bean id="successHandler" class="com.bestaone.meishi.core.security.UrlAuthenticationSuccessHandler">
 		<beans:property name="alwaysUseDefaultTargetUrl" value="true"/>
-		<beans:property name="defaultTargetUrl" value="/loginSuccess"/>
+		<beans:property name="defaultTargetUrl" value="/"/>
 	</beans:bean>
 	
 	<!-- 注销过滤器，完成前台用户注销时的定向功能 -->  
