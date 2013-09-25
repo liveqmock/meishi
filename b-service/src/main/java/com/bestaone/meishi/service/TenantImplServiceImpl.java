@@ -25,4 +25,9 @@ public class TenantImplServiceImpl extends BaseEntityService<TenantImpl, String>
 		return tenantImplDao.quaryByUserId(userId);
 	}
 
+	@Override
+	public TenantImpl getByKey(String key) {
+		return tenantImplDao.getByKey(key);
+	}
+
 }

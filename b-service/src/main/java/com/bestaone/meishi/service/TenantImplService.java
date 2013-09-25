@@ -6,4 +6,6 @@ import com.bestaone.meishi.model.TenantImpl;
 
 public interface TenantImplService extends IBaseService<TenantImpl, String>, TenantService{
 	
+	TenantImpl getByKey(String key);
+	
 }

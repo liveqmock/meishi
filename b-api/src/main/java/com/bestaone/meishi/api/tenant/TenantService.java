@@ -5,4 +5,6 @@ public interface TenantService {
 
 	Tenant<?> quaryByUserId(String id);
 	
+	Tenant<?> getByKey(String key);
+	
 }

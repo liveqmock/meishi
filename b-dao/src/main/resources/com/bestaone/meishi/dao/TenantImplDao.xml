@@ -5,6 +5,7 @@
 
 	<resultMap type="com.bestaone.meishi.model.TenantImpl" id="tenantResultMap">
 		<id property="id" column="ID" />
+		<id property="key" column="KEY" />
 		<id property="createrTime" column="CREATER_TIME" />
 		<id property="status" column="STATUS" />
 	</resultMap>
@@ -15,8 +16,8 @@
 	</sql>
 	
 	<insert id="insert" parameterType="com.bestaone.meishi.model.TenantImpl">
-		INSERT INTO tenant(ID,CREATER_TIME,STATUS)
-		VALUES(#{id},#{createrTime},#{status})
+		INSERT INTO tenant(ID,KEY,CREATER_TIME,STATUS)
+		VALUES(#{id},#{key},#{createrTime},#{status})
 	</insert>
 	
 	<delete id="delete" parameterType="java.io.Serializable">
@@ -25,6 +26,7 @@
 	
 	<update id="update" parameterType="com.bestaone.meishi.model.TenantImpl">
   		UPDATE tenant SET
+  			KEY = #{key},
     		CREATER_TIME = #{createrTime},
     		STATUS = #{status}
   		WHERE ID = #{id}
@@ -32,6 +34,10 @@
 	
 	<select id="getById" parameterType="java.io.Serializable" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">
 		<include refid="SELECT_A"/> WHERE T.ID = #{id}
+	</select>
+	
+	<select id="getByKey" parameterType="java.io.Serializable" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">
+		<include refid="SELECT_A"/> WHERE T.KEY = #{key}
 	</select>
 	
 	<select id="quaryAll" resultType="com.bestaone.meishi.model.TenantImpl" resultMap="tenantResultMap">

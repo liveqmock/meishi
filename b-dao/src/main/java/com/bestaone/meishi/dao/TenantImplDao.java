@@ -11,4 +11,6 @@ public interface TenantImplDao extends BaseDao<TenantImpl,String> {
 
 	TenantImpl quaryByUserId(@Param(value="userId") String userId);
 
+	TenantImpl getByKey(@Param(value="key") String key);
+	
 }

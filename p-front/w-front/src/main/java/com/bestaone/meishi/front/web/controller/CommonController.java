@@ -15,6 +15,7 @@ import com.bestaone.meishi.core.page.ViewData;
 import com.bestaone.meishi.core.page.ViewDataStatus;
 import com.bestaone.meishi.front.web.commom.Constant;
 import com.bestaone.meishi.model.UserImpl;
+import com.bestaone.meishi.service.TenantImplServiceImpl;
 import com.bestaone.meishi.service.UserImplService;
 
 
@@ -22,16 +23,15 @@ import com.bestaone.meishi.service.UserImplService;
 public class CommonController {
 	
 	@Autowired
+	private TenantImplServiceImpl tenantImplServiceImpl;
+	
+	@Autowired
 	private UserImplService userImplService;
 	
-	@RequestMapping(value="/")
-	public String root(HttpSession httpSession, Model model){
-		return index(httpSession,model);
-	}
-	
-	@RequestMapping(value="/index")
+	@RequestMapping({"","/","index"})
 	public String index(HttpSession httpSession, Model model){
-		model.addAttribute("currentUser", httpSession.getAttribute(Constant.CURRENT_USER));
+//		model.addAttribute("currentUser", httpSession.getAttribute(Constant.CURRENT_USER));
+//		tenantImplServiceImpl.getByKey("zgs");
 		return "index";
 	}
 

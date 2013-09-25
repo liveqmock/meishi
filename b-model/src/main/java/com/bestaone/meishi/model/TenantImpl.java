@@ -13,6 +13,7 @@ public class TenantImpl extends Tenant<TenantImpl> {
 
 	private static final long serialVersionUID = 5909659123305541654L;
 
+	private String key;
 	private Date createrTime;
 	private TenantStatus status;
 	
@@ -27,6 +28,12 @@ public class TenantImpl extends Tenant<TenantImpl> {
 	}
 	public void setStatus(TenantStatus status) {
 		this.status = status;
+	}
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
 	}
 
 }
