@@ -56,10 +56,10 @@
 							</div>
 
 							<div class="form">
-								<form action="/register2">
-									<input type="text" class="form-control" placeholder="用户名">
-									<input type="text" class="form-control" placeholder="密码">
-									<input type="text" class="form-control" placeholder="重复密码">
+								<form id="registerForm" action="/register2" method="post">
+									<input id="username" name="username" type="text" class="form-control" placeholder="用户名">
+									<input id="password" name="password" type="text" class="form-control" placeholder="密码">
+									<input id="passwordRepeat" name="passwordRepeat" type="text" class="form-control" placeholder="重复密码">
 									<div class="forgot">
 										<span>已经拥有账号?</span> <a href="/login">登录</a>
 									</div>
@@ -74,6 +74,7 @@
 	</div>
 
 	<!-- js -->
+	<script src="/static/js/jquery/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="/static/js/web/register.js" type="text/javascript"></script>
 
 </body>
