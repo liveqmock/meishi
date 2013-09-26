@@ -18,6 +18,7 @@ $(function(){
         		$("#loginUserItem").attr("value",obj.result.id);
         		$("#loginUserItem .username").html(obj.result.username);
         		$("#loginItem").addClass("dn");
+        		$("#registerItem").addClass("dn");
         		$('#loginDlg').modal('hide')
         		$("#tip").addClass("dn");
         	}else{

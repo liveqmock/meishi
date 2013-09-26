@@ -1,0 +1,222 @@
+@CHARSET "UTF-8";
+
+#sign-up{
+	margin: 20px 150px;
+}
+
+.section_header h3 {
+    border-bottom: 1px solid #B3B3B3;
+    color: #646464;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 0;
+    line-height: 40px;
+}
+
+#sign-up .left_box .perk_box .perk .glyphicon {
+    float: left;
+    height: 46px;
+    margin-right: 16px;
+    width: 40px;
+    font-size: 24px;
+    margin: 5px auto 10px;
+    color: black;
+}
+
+/****/
+
+#sign-up .section_header {
+    margin-bottom: 20px;
+}
+#sign-up .section_header h3 {
+    margin: 0;
+}
+#sign-up .section_header h3 span {
+    font-size: 18px;
+    line-height: 20px;
+}
+#sign-up .left_box {
+    color: #252527;
+}
+#sign-up .left_box h4 {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 43px;
+    margin: 20px 0 40px;
+}
+#sign-up .left_box .perk_box {
+    float: left;
+    width: 100%;
+}
+#sign-up .left_box .perk_box .perk {
+    color: #727276;
+    margin-bottom: 31px;
+    width: 100%;
+}
+#sign-up .left_box .perk_box .perk .icos {
+    float: left;
+    height: 46px;
+    margin-right: 16px;
+    width: 28px;
+}
+#sign-up .left_box .perk_box .perk .ico1 {
+    background-position: 4px 6px;
+}
+#sign-up .left_box .perk_box .perk .ico2 {
+    background-position: -35px 14px;
+}
+#sign-up .left_box .perk_box .perk .ico3 {
+    background-position: -69px 7px;
+}
+#sign-up .left_box .perk_box .perk p {
+    font-size: 15px;
+}
+#sign-up .left_box .perk_box .perk p strong {
+    color: #333333;
+}
+#sign-up a.btn_sign {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 4px 4px 4px 4px;
+    color: #FDFDFD;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 25%;
+}
+#sign-up a.btn_sign:hover {
+    background: none repeat scroll 0 0 #252528;
+}
+#sign-up .icos {
+    background: url("../../img/signin_icos.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 30px;
+    width: 96px;
+}
+#sign-up .signin_box {
+    float: right;
+}
+#sign-up .signin_box .box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 5px 0 #EEEEEE;
+    float: right;
+    padding: 35px 0 30px;
+    width: 90%;
+}
+#sign-up .signin_box .box .box_cont {
+    margin: 0 auto;
+    width: 77%;
+}
+#sign-up .signin_box .box .social {
+    float: none;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+#sign-up .signin_box .box .social a.circle {
+    border-radius: 100% 100% 100% 100%;
+    display: inline-block;
+    height: 56px;
+    margin-right: 34px;
+    text-align: center;
+    transition: border-color 0.1s ease-in 0s;
+    width: 56px;
+}
+#sign-up .signin_box .box .social a.circle:hover {
+    border-color: rgba(0, 0, 0, 0.7);
+}
+#sign-up .signin_box .box .social a.circle img {
+    display: inline-block;
+    margin-top: 15px;
+}
+#sign-up .signin_box .box .social a.facebook {
+    background: none repeat scroll 0 0 #233678;
+    border: 2px solid #233678;
+}
+#sign-up .signin_box .box .social a.twitter {
+    background: none repeat scroll 0 0 #54AEE1;
+    border: 2px solid #54AEE1;
+}
+#sign-up .signin_box .box .social a.gplus {
+    background: none repeat scroll 0 0 #292929;
+    border: 2px solid #292929;
+    margin: 0;
+}
+#sign-up .signin_box .box .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#sign-up .signin_box .box .division .line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+}
+#sign-up .signin_box .box .division .l {
+    left: 0;
+}
+#sign-up .signin_box .box .division .r {
+    right: 0;
+}
+#sign-up .signin_box .box .division span {
+    color: #424242;
+    font-size: 17px;
+}
+#sign-up .signin_box .box .form form {
+    margin: 0;
+}
+#sign-up .signin_box .box .form input[type="text"] {
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+    font-size: 16px;
+    height: 37px;
+    margin-bottom: 16px;
+}
+#sign-up .signin_box .box .form input[type="submit"] {
+    background: none repeat scroll 0 0 #187CCC;
+    border: 0 none;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 6px 19px;
+    text-transform: uppercase;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+#sign-up .signin_box .box .form input[type="submit"]:hover {
+    background: none repeat scroll 0 0 #252528;
+}
+#sign-up .signin_box .box .form .forgot {
+    color: #797979;
+    margin-bottom: 20px;
+    margin-left: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+#sign-up .signin_box .box .form .forgot span {
+    margin-right: 5px;
+}
+#sign-up .signin_box .box .form .forgot a {
+    border-bottom: 1px solid #797979;
+    color: #797979;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.2s ease 0s;
+}
+#sign-up .signin_box .box .form .forgot a:hover {
+    border-color: #187CCC;
+    color: #187CCC;
+}
+

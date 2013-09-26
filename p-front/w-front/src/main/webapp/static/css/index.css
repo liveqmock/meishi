@@ -149,7 +149,7 @@ body {
 	text-decoration:none;
 } 
 
-#loginUserItem.dn, #loginItem.dn{
+#loginUserItem.dn, #registerItem.dn, #loginItem.dn{
 	display: none;
 }
 

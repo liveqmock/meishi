@@ -1,5 +1,3 @@
-<%@page import="com.bestaone.meishi.api.user.SecurityUser"%>
-<%@page import="com.bestaone.meishi.core.UserContext"%>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -39,6 +37,7 @@
 						</ul>
 					</li>
 					<li><a id="loginItem" href="javascript:void(0)" data-toggle="modal" data-target="#loginDlg" class="<c:if test="${currentUser!=null}">dn</c:if>">登录</a></li>
+					<li><a id="registerItem" href="/register" class="<c:if test="${currentUser!=null}">dn</c:if>">注册</a></li>
 					<li id="loginUserItem" class="dropdown <c:if test="${currentUser==null}">dn</c:if>" value="${currentUser.id}">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="glyphicon glyphicon-user"></i>

@@ -13,12 +13,12 @@
 		<div class="container">
 			<div class="section_header">
 				<h3>
-					注册 <span>(第一步)</span>
+					注册 <span>(第二步)</span>
 				</h3>
 			</div>
 			<div class="row login">
 				<div class="col-sm-5 left_box">
-					<h4>创建您的账号</h4>
+					<h4>注册成功，下一步</h4>
 					<div class="perk_box">
 						<div class="perk">
 							<span class="glyphicon glyphicon-cutlery"></span>
@@ -44,28 +44,9 @@
 				<div class="col-sm-6 signin_box">
 					<div class="box">
 						<div class="box_cont">
-							<div class="social">
-								<a class="circle facebook" href="#"> <img alt="" src="/static/images/face.png"></a> 
-								<a class="circle twitter" href="#"> <img alt="" src="/static/images/twt.png"></a>
-								<a class="circle gplus" href="#"> <img alt="" src="/static/images/gplus.png"></a>
-							</div>
-							<div class="division">
-								<div class="line l"></div>
-								<span>或者</span>
-								<div class="line r"></div>
-							</div>
-
-							<div class="form">
-								<form action="/register2">
-									<input type="text" class="form-control" placeholder="用户名">
-									<input type="text" class="form-control" placeholder="密码">
-									<input type="text" class="form-control" placeholder="重复密码">
-									<div class="forgot">
-										<span>已经拥有账号?</span> <a href="/login">登录</a>
-									</div>
-									<input type="submit" value="立即注册">
-								</form>
-							</div>
+							<div class="division"><a class="btn btn-primary btn-lg" href="/">回到主页</a></div>
+							<div class="division"><a class="btn btn-primary btn-lg" href="/console/edit_userinfo">完善资料</a></div>
+							<div class="division"><a class="btn btn-primary btn-lg" href="/console/edit_tenantinfo">注册店铺</a></div>
 						</div>
 					</div>
 				</div>

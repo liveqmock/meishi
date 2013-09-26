@@ -51,13 +51,23 @@ public class CommonController {
 	}
 	
 	/**
-	 * 注册
+	 * 注册第一步
 	 * @param model
 	 * @return
 	 */
 	@RequestMapping(value="/register")
 	public String register(Model model){
 		return "register";
+	}
+	
+	/**
+	 * 注册第二步
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="/register2")
+	public String register2(HttpServletRequest request, HttpServletResponse response, Model model){
+		return "register2";
 	}
 	
 	/**
@@ -70,22 +80,6 @@ public class CommonController {
 	public String logout(HttpSession httpSession, Model model){
 //		httpSession.removeAttribute(Constant.CURRENT_USER);
 		return "redirect:/index";
-	}
-	
-	/**
-	 * 用户控制台
-	 * @param httpSession
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value="/console")
-	public String console(HttpSession httpSession, Model model){
-//		UserImpl user = (UserImpl) httpSession.getAttribute(Constant.CURRENT_USER);
-		SecurityUser<?> user = UserContext.getCurrentUser();
-		if(user!=null){
-			return "redirect:/console/" + user.getUsername();
-		}
-		return "404";
 	}
 
 	@ResponseBody
