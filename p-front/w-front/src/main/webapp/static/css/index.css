@@ -153,6 +153,224 @@ body {
 	display: none;
 }
 
+/**小图标**/
+.bds_tools a {
+    background: url("/static/images/is.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    padding-left: 22px;
+    padding-top: 6px;
+}
+
+.bds_tools_24 a {
+    background: url("/static/images/is_24.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 29px;
+    padding-left: 0;
+    width: 29px;
+}
+
+.bds_tools_32 a {
+    background: url("/static/images/is_32.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 37px;
+    margin-right: 3px;
+    text-indent: -100em;
+    width: 37px;
+}
+
+.bdshare a:hover{
+    color: #333333;
+    opacity: 0.8;
+}
+
+.bds_qzone {
+    background-position: 0 -75px !important;
+}
+.bds_tsina {
+    background-position: 0 -115px !important;
+}
+.bds_bdhome {
+    background-position: 0 -155px !important;
+}
+.bds_renren {
+    background-position: 0 -195px !important;
+}
+.bds_tqq {
+    background-position: 0 -235px !important;
+}
+.bds_kaixin001 {
+    background-position: 0 -275px !important;
+}
+.bds_tqf {
+    background-position: 0 -315px !important;
+}
+.bds_hi {
+    background-position: 0 -355px !important;
+}
+.bds_douban {
+    background-position: 0 -395px !important;
+}
+.bds_tsohu {
+    background-position: 0 -435px !important;
+}
+.bds_msn {
+    background-position: 0 -475px !important;
+}
+.bds_qq {
+    background-position: 0 -515px !important;
+}
+.bds_taobao {
+    background-position: 0 -555px !important;
+}
+.bds_tieba {
+    background-position: 0 -595px !important;
+}
+.bds_buzz {
+    background-position: 0 -635px !important;
+}
+.bds_sohu {
+    background-position: 0 -675px !important;
+}
+.bds_t163 {
+    background-position: 0 -715px !important;
+}
+.bds_qy {
+    background-position: 0 -755px !important;
+}
+.bds_tfh {
+    background-position: 0 -795px !important;
+}
+.bds_hx {
+    background-position: 0 -835px !important;
+}
+.bds_fx {
+    background-position: 0 -875px !important;
+}
+.bds_ff {
+    background-position: 0 -915px !important;
+}
+.bds_xg {
+    background-position: 0 -955px !important;
+}
+.bds_ty {
+    background-position: 0 -995px !important;
+}
+.bds_s51 {
+    background-position: 0 -1035px !important;
+}
+.bds_fl5 {
+    background-position: 0 -1075px !important;
+}
+.bds_fbook {
+    background-position: 0 -1115px !important;
+}
+.bds_twi {
+    background-position: 0 -1155px !important;
+}
+.bds_ms {
+    background-position: 0 -1195px !important;
+}
+.bds_deli {
+    background-position: 0 -1235px !important;
+}
+.bds_s139 {
+    background-position: 0 -1275px !important;
+}
+.bds_zx {
+    background-position: 0 -1315px !important;
+}
+.bds_linkedin {
+    background-position: 0 -1354px !important;
+}
+.bds_copy {
+    background-position: 0 -1393px !important;
+}
+.bds_ifeng {
+    background-position: 0 -1431px !important;
+}
+.bds_tuita {
+    background-position: 0 -1470px !important;
+}
+.bds_meilishuo {
+    background-position: 0 -1549px !important;
+}
+.bds_mogujie {
+    background-position: 0 -1589px !important;
+}
+.bds_diandian {
+    background-position: 0 -1629px !important;
+}
+.bds_huaban {
+    background-position: 0 -1669px !important;
+}
+.bds_leho {
+    background-position: 0 -1709px !important;
+}
+.bds_wealink {
+    background-position: 0 -1749px !important;
+}
+.bds_duitang {
+    background-position: 0 -1789px !important;
+}
+.bds_thx {
+    background-position: 0 -1829px !important;
+}
+.bds_mail {
+    background-position: 0 -1870px !important;
+}
+.bds_print {
+    background-position: 0 -1910px !important;
+}
+.bds_baidu {
+    background-position: 0 -1950px !important;
+}
+.bds_share189 {
+    background-position: 0 -1990px !important;
+}
+.bds_youdao {
+    background-position: 0 -2030px !important;
+}
+.bds_mshare {
+    background-position: 0 -2070px !important;
+}
+.bds_mop {
+    background-position: 0 -2110px !important;
+}
+.bds_yaoshi {
+    background-position: 0 -2150px !important;
+}
+.bds_bdxc {
+    background-position: 0 -2190px !important;
+}
+.bds_sqq {
+    background-position: 0 -2230px !important;
+}
+.bds_sdo {
+    background-position: 0 -2270px !important;
+}
+.bds_qingbiji {
+    background-position: 0 -2310px !important;
+}
+.bds_people {
+    background-position: 0 -2350px !important;
+}
+.bds_kanshou {
+    background-position: 0 -2390px !important;
+}
+.bds_xinhua {
+    background-position: 0 -2430px !important;
+}
+.bds_yaolan {
+    background-position: 0 -2470px !important;
+}
+.bds_isohu {
+    background-position: 0 -2510px !important;
+}
+/**小图标**/
 
 
 

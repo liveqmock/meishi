@@ -150,6 +150,14 @@
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<div class="bds_tools bdshare">
+												<a class="bds_qzone"></a>
+							                    <a class="bds_tsina"></a>
+							                    <a class="bds_tqq"></a>
+							                    <a class="bds_renren"></a>
+							                    <a class="bds_fbook"></a>
+							                    <a class="bds_twi"></a>       
+	             	 						</div>
 	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
@@ -169,6 +177,14 @@
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<div class="bds_tools bdshare">
+												<a class="bds_qzone"></a>
+							                    <a class="bds_tsina"></a>
+							                    <a class="bds_tqq"></a>
+							                    <a class="bds_renren"></a>
+							                    <a class="bds_fbook"></a>
+							                    <a class="bds_twi"></a>       
+	             	 						</div>
 	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
@@ -188,6 +204,14 @@
 	            						<div class="caption">
 	              							<h3>铁板牛扒套餐</h3>
 	              							<p class="intro">精选日本神户牛腱肉，经高火暴烧至6成熟后，用精调汤汁浇盖后，加上少许西兰花点缀，给您以色香味俱全的铁板牛扒商务套餐.</p>
+	             	 						<div class="bds_tools bdshare">
+												<a class="bds_qzone"></a>
+							                    <a class="bds_tsina"></a>
+							                    <a class="bds_tqq"></a>
+							                    <a class="bds_renren"></a>
+							                    <a class="bds_fbook"></a>
+							                    <a class="bds_twi"></a>       
+	             	 						</div>
 	             	 						<p><span class="price">¥1193.8</span> <a class="btn btn-primary fr" href="#">了解下</a></p>
 	            						</div>
 	          						</div>
