@@ -59,8 +59,8 @@
 	</settings>
 	
 	<plugins>
-		<plugin interceptor="com.bestaone.aiwan.core.orm.mybatis.PaginationStatementHandlerInterceptor" />
-		<plugin interceptor="com.bestaone.aiwan.core.orm.mybatis.PaginationResultSetHandlerInterceptor" />
+		<plugin interceptor="com.bestaone.meishi.core.orm.mybatis.PaginationStatementHandlerInterceptor" />
+		<plugin interceptor="com.bestaone.meishi.core.orm.mybatis.PaginationResultSetHandlerInterceptor" />
 	</plugins>
 	
 </configuration>  

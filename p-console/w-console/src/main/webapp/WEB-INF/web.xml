@@ -6,7 +6,7 @@
 	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-    <display-name>AIWAN</display-name>
+    <display-name>AIWAN-CONSOLE</display-name>
     
  	<!-- 	-->
 	<filter>
@@ -72,7 +72,7 @@
 
 	 
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>/index</welcome-file>
 	</welcome-file-list>
  
 
