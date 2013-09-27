@@ -1,7 +1,15 @@
+平台
+http://openshift.redhat.com
+http://www.cloudbees.com
+https://bestaone.ci.cloudbees.com
+
 测试数据库：
 https://www.cleardb.com
 Database Server 	Database Name 	Username 	Password
 us-cdbr-azure-east-c.cloudapp.net 	cdb_f29812df00 	bd60534df4bdf1 	8b8c6ea2
+us-cdbr-azure-east-c.cloudapp.net	cdb_e6c4e14dc5	bce15277c406e6	00aca0b9
+
+
 
 http://www.110chi.com
 http://sh.meituan.com/category/meishi
