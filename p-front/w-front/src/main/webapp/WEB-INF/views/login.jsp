@@ -43,8 +43,8 @@ body {
 	<form id="loginForm" action="/j_spring_security_check" method="POST" class="form-signin">
 		<fieldset>
 			<h2 class="form-signin-heading">请登录</h2>
-			<input id="username" name='username' value="" type="text" placeholder="Email address" class="input-block-level">
-			<input id="password" name='password' value="" type="password" placeholder="Password" class="input-block-level">
+			<input id="username" name='username' value="" type="text" placeholder="Email address" class="input-block-level" required="required">
+			<input id="password" name='password' value="" type="password" placeholder="Password" class="input-block-level" required="required">
 			<c:if test="${param.error==1}">
 				<div id="tip" class="alert alert-warning">用户名或密码错误</div>
 			</c:if>

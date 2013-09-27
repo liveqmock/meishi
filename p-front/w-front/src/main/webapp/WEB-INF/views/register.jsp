@@ -57,9 +57,15 @@
 
 							<div class="form">
 								<form id="registerForm" action="/register2" method="post">
-									<input id="username" name="username" type="text" class="form-control" placeholder="用户名">
-									<input id="password" name="password" type="text" class="form-control" placeholder="密码">
-									<input id="passwordRepeat" name="passwordRepeat" type="text" class="form-control" placeholder="重复密码">
+									<div class="field">
+										<input id="username" name="username" type="text" class="form-control" placeholder="用户名">
+									</div>
+									<div class="field">
+										<input id="password" name="password" type="password" class="form-control" placeholder="密码">
+									</div>
+									<div class="field">
+										<input id="passwordRepeat" name="passwordRepeat" type="password" class="form-control" placeholder="重复密码">
+									</div>
 									<div class="forgot">
 										<span>已经拥有账号?</span> <a href="/login">登录</a>
 									</div>

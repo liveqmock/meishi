@@ -175,13 +175,16 @@
 #sign-up .signin_box .box .form form {
     margin: 0;
 }
-#sign-up .signin_box .box .form input[type="text"] {
+#sign-up .signin_box .box .form .field {
     border-radius: 3px 3px 3px 3px;
-    color: #000000;
-    font-size: 16px;
-    height: 37px;
-    margin-bottom: 16px;
+    color: red;
+    height: 60px;
 }
+
+#sign-up .signin_box .box .form .field label{
+    font-weight: normal;
+}
+
 #sign-up .signin_box .box .form input[type="submit"] {
     background: none repeat scroll 0 0 #187CCC;
     border: 0 none;

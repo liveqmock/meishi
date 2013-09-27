@@ -17,15 +17,15 @@ $(function(){
 		},
 		messages : {
 			username : {
-				required : "必填字段",
-				rangelength : "长度在8-20个字符"
+				required : "*必填字段",
+				rangelength : "*长度在8-20个字符"
 			},
 			password : {
-				required : "必填字段",
-				rangelength : "长度在8-20个字符"
+				required : "*必填字段",
+				rangelength : "*长度在8-20个字符"
 			},
 			passwordRepeat : {
-				equalTo : "密码不一致"
+				equalTo : "*密码不一致"
 			}
 		}
 	});
