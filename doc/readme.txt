@@ -1,7 +1,6 @@
 1.使用meishi_front.sql初始化数据库
 2.构建项目，mvn install
 3.启动项目，mvn tomcat7:run
-9
 
 平台
 http://openshift.redhat.com
